@@ -1,0 +1,158 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/testResults/TestResult-7360b76b-51ad-4722-8f64-c8962c54fc31/analysisResults?analysisResultType=CPURegression&api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTFfa2FpZmEtMS4wL3Rlc3RSZXN1bHRzL1Rlc3RSZXN1bHQtNzM2MGI3NmItNTFhZC00NzIyLThmNjQtYzg5NjJjNTRmYzMxL2FuYWx5c2lzUmVzdWx0cz9hbmFseXNpc1Jlc3VsdFR5cGU9Q1BVUmVncmVzc2lvbiZhcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "f4237a85-e900-4a2a-9d65-def457aa0f1d"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.29916.01",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.19042.",
+          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Set-Cookie": [
+          "ARRAffinity=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14993"
+        ],
+        "x-ms-providerhub-traffic": [
+          "True"
+        ],
+        "x-ms-failure-cause": [
+          "service"
+        ],
+        "x-ms-request-id": [
+          "f058e869-1b42-4427-8ba5-8761b529e0b5"
+        ],
+        "x-ms-correlation-request-id": [
+          "ddc8f904-627b-4e96-8038-1135b5224464"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20210427T080706Z:ddc8f904-627b-4e96-8038-1135b5224464"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "X-MSEdge-Ref": [
+          "Ref A: 635B0139D0084384A8BBD84BE9AEAB74 Ref B: SGEEDGE0614 Ref C: 2021-04-27T08:07:05Z"
+        ],
+        "Date": [
+          "Tue, 27 Apr 2021 08:07:06 GMT"
+        ],
+        "Content-Length": [
+          "189"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/' with error: Not Found\"\r\n  }\r\n}",
+      "StatusCode": 404
+    },
+    {
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/testResults/TestResult-7360b76b-51ad-4722-8f64-c8962c54fc31/analysisResults/CPURegression?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTFfa2FpZmEtMS4wL3Rlc3RSZXN1bHRzL1Rlc3RSZXN1bHQtNzM2MGI3NmItNTFhZC00NzIyLThmNjQtYzg5NjJjNTRmYzMxL2FuYWx5c2lzUmVzdWx0cy9DUFVSZWdyZXNzaW9uP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "2b6ff20c-4476-493c-8ddf-99e4ebab6984"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.29916.01",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.19042.",
+          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Set-Cookie": [
+          "ARRAffinity=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14992"
+        ],
+        "x-ms-providerhub-traffic": [
+          "True"
+        ],
+        "x-ms-failure-cause": [
+          "service"
+        ],
+        "x-ms-request-id": [
+          "7bd9f2d2-9145-4a45-b4b7-794aede46f5a"
+        ],
+        "x-ms-correlation-request-id": [
+          "10a52a22-3ab9-42b4-9a8f-325e3be48417"
+        ],
+        "X-Powered-By": [
+          "ASP.NET"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20210427T080706Z:10a52a22-3ab9-42b4-9a8f-325e3be48417"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "X-MSEdge-Ref": [
+          "Ref A: 94A22191A7A243998F7ECAFCDA40B7CC Ref B: SGEEDGE0614 Ref C: 2021-04-27T08:07:06Z"
+        ],
+        "Date": [
+          "Tue, 27 Apr 2021 08:07:06 GMT"
+        ],
+        "Content-Length": [
+          "364"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/testResults/TestResult-7360b76b-51ad-4722-8f64-c8962c54fc31/analysisResults/CPURegression' with error: Not Found\"\r\n  }\r\n}",
+      "StatusCode": 404
+    }
+  ],
+  "Names": {},
+  "Variables": {
+    "SubscriptionId": "9fabf001-9c1f-4aab-9451-e431da271956"
+  }
+}

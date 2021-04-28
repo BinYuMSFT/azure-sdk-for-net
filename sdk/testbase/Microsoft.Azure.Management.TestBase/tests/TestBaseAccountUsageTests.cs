@@ -1,0 +1,32 @@
+﻿using Microsoft.Azure.Management.Network.Models;
+using Microsoft.Rest.ClientRuntime.Azure.TestFramework;
+using System;
+using Xunit;
+
+namespace TestBase.Tests
+{
+    public class TestBaseAccountUsageTests : TestbaseBase
+    {
+        string nextPageLink = null;
+
+        [Fact]
+        public void TestUsage()
+        {
+            using (MockContext context = MockContext.Start(this.GetType()))
+            {
+                EnsureClientInitialized(context);
+
+                try
+                {
+                    var response = t_TestBaseClient.TestBaseAccountUsage.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName).GetAwaiter().GetResult();
+                }
+                catch (Exception ex)
+                {
+                    Assert.Contains("NotFound", ex.Message);
+                }
+
+                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.TestBaseAccountUsage.ListNextWithHttpMessagesAsync(nextPageLink));
+            }
+        }
+    }
+}
