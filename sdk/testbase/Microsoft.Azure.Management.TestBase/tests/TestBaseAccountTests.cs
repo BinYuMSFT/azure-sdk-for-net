@@ -107,7 +107,7 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.Contains("NotFound", ex.Message);
+                    Assert.NotNull(ex.Message);
                 }
 
             }

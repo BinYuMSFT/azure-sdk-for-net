@@ -6,45 +6,44 @@ namespace TestBase.Tests
 {
     public class AnalysisResultTests : TestbaseBase
     {
-        string testResultName = "TestResult-7360b76b-51ad-4722-8f64-c8962c54fc31";
-        string[] analysisResultTypes=new string[] { AnalysisResultType.CPURegression, AnalysisResultType.CPUUtilization, AnalysisResultType.MemoryRegression, AnalysisResultType.MemoryUtilization, AnalysisResultType.Reliability, AnalysisResultType.ScriptExecution
-    };
+        string testResultName = "TestResult-98f12f56-9cd9-4b21-8eab-7acf448c46df";
+        string[] analysisResultTypes = new string[] { AnalysisResultType.ScriptExecution, AnalysisResultType.CPUUtilization, AnalysisResultType.MemoryRegression, AnalysisResultType.MemoryUtilization, AnalysisResultType.Reliability, AnalysisResultType.CPURegression
+        };
 
-    [Fact]
+        [Fact]
         public void TestAnalysisOperations()
         {
             using (MockContext context = MockContext.Start(this.GetType()))
             {
                 EnsureClientInitialized(context);
 
-                try
+
+                foreach (var anaResultType in analysisResultTypes)
                 {
-                    foreach (var anaResultType in analysisResultTypes)
+                    try
                     {
                         var result = t_TestBaseClient.AnalysisResults.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, testResultName, anaResultType).GetAwaiter().GetResult();
                         Assert.NotNull(result);
                         Assert.NotNull(result.Body);
                     }
-                    
-                }
-                catch (Exception ex)
-                {
-                    Assert.NotNull(ex.Message);
+                    catch (Exception ex)
+                    {
+                        Assert.NotNull(ex.Message);
+                    }
                 }
 
-                try
+                foreach (var anaResultType in analysisResultTypes)
                 {
-                    foreach (var anaResultType in analysisResultTypes)
+                    try
                     {
                         var result = t_TestBaseClient.AnalysisResult.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, testResultName, anaResultType).GetAwaiter().GetResult();
                         Assert.NotNull(result);
                         Assert.NotNull(result.Body);
                     }
-                    
-                }
-                catch (Exception ex)
-                {
-                    Assert.NotNull(ex.Message);
+                    catch (Exception ex)
+                    {
+                        Assert.NotNull(ex.Message);
+                    }
                 }
 
             }

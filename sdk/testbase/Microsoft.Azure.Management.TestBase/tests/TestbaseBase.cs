@@ -147,11 +147,11 @@ namespace TestBase.Tests
         /// </summary>
         protected class AnalysisResultType
         {
-            public static string ScriptExecution = "ScriptExecution";
-            public static string Reliability = "Reliability";
-            public static string MemoryUtilization = "MemoryUtilization";
+            public static string ScriptExecution = "scriptExecution";
+            public static string Reliability = "reliability";
+            public static string MemoryUtilization = "memoryUtilization";
             public static string CPUUtilization = "CPUUtilization";
-            public static string MemoryRegression = "MemoryRegression";
+            public static string MemoryRegression = "memoryRegression";
             public static string CPURegression = "CPURegression";
         }
 

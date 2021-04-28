@@ -12,7 +12,7 @@ namespace TestBase.Tests
         AzureOperationResponse<IPage<FavoriteProcessResource>> favoriteResponse;
 
         string nextPageLink = null;
-        string favResourceName = "Resource groups";
+        string favResourceName = "AM_Base.exe";
         
 
         [Fact]

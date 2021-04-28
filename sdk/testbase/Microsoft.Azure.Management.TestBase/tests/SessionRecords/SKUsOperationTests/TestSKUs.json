@@ -7,7 +7,7 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "ea00f277-13d2-486b-9d5e-736bda451264"
+          "4bf017c7-f528-4c26-a900-2f3d88c94bed"
         ],
         "Accept-Language": [
           "en-US"
@@ -27,16 +27,16 @@
           "no-cache"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14988"
+          "14994"
         ],
         "x-ms-request-id": [
-          "1d47b765-ec3c-4add-b026-351afe3df4e3"
+          "74d452c6-071f-4272-b445-885549829cf3"
         ],
         "x-ms-correlation-request-id": [
-          "1d47b765-ec3c-4add-b026-351afe3df4e3"
+          "74d452c6-071f-4272-b445-885549829cf3"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210427T080803Z:1d47b765-ec3c-4add-b026-351afe3df4e3"
+          "CENTRALUS:20210428T031719Z:74d452c6-071f-4272-b445-885549829cf3"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -45,13 +45,13 @@
           "nosniff"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 508381DC46FE4A46AEB18DDFD347D706 Ref B: SGEEDGE0619 Ref C: 2021-04-27T08:08:03Z"
+          "Ref A: ACD9BC1940994412877665149C28C0F0 Ref B: SGEEDGE0415 Ref C: 2021-04-28T03:17:19Z"
         ],
         "Date": [
-          "Tue, 27 Apr 2021 08:08:03 GMT"
+          "Wed, 28 Apr 2021 03:17:18 GMT"
         ],
         "Content-Length": [
-          "12"
+          "203"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -60,7 +60,7 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"value\": []\r\n}",
+      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"resourceType\": \"testBaseAccounts\",\r\n      \"name\": \"S0\",\r\n      \"tier\": \"Standard\",\r\n      \"locations\": [\r\n        \"global\"\r\n      ],\r\n      \"locationInfo\": [\r\n        {\r\n          \"location\": \"global\",\r\n          \"zones\": [],\r\n          \"zoneDetails\": []\r\n        }\r\n      ],\r\n      \"capabilities\": [],\r\n      \"restrictions\": []\r\n    }\r\n  ]\r\n}",
       "StatusCode": 200
     }
   ],
