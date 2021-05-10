@@ -1,4 +1,7 @@
-﻿using Microsoft.Azure.Management.ManagedServiceIdentity;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+using Microsoft.Azure.Management.ManagedServiceIdentity;
 using Microsoft.Azure.Management.Network;
 using Microsoft.Azure.Management.ResourceManager;
 using Microsoft.Azure.Management.Storage;
