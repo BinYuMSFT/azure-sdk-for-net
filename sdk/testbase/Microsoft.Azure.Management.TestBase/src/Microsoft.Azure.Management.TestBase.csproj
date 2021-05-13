@@ -8,9 +8,9 @@
     <Description>
       Description for TestBaseAccounts.
     </Description>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.1-preview</Version>
     <AssemblyName>Microsoft.Azure.Management.TestBase</AssemblyName>
-    <PackageTags>management;testbase;</PackageTags>
+    <PackageTags>management;testbase</PackageTags>
     <PackageReleaseNotes>
 
 </PackageReleaseNotes>

@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountFlightingRingsOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountFlightingRingsOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountFlightingRingsOperations
+    internal partial class TestBaseAccountFlightingRingsOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountFlightingRingsOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountFlightingRingsOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountFlightingRingsOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountFlightingRingsOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists all the flighting rings of a Test Base Account.

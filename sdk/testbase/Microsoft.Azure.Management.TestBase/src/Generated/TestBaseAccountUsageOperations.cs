@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountUsageOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountUsageOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountUsageOperations
+    internal partial class TestBaseAccountUsageOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountUsageOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountUsageOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountUsageOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountUsageOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists the usage data of a Test Base Account.

@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountAvailableOSsOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountAvailableOSsOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountAvailableOSsOperations
+    internal partial class TestBaseAccountAvailableOSsOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountAvailableOSsOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountAvailableOSsOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountAvailableOSsOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountAvailableOSsOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists all the available OSs to run a package under a Test Base Account.

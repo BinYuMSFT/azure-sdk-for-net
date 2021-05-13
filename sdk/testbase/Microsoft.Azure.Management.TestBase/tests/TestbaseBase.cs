@@ -32,7 +32,7 @@ namespace TestBase.Tests
         /// </summary>
         protected string t_PackageName = "package1_kaifa";
 
-        protected RESTAPIforTestBaseClient t_TestBaseClient;
+        protected TestBaseClient t_TestBaseClient;
         protected ResourceManagementClient t_ResourceClient;
         protected StorageManagementClient t_StorageClient;
         protected NetworkManagementClient t_NetworkClient;

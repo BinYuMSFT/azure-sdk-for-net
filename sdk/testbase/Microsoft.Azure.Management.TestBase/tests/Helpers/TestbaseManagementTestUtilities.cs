@@ -18,14 +18,14 @@ namespace TestBase.Tests
 
         public static string DefaultLocation = "SoutheastAsia";
 
-        public static RESTAPIforTestBaseClient GetTestbaseManagementClient(MockContext context, RecordedDelegatingHandler handler = null)
+        public static TestBaseClient GetTestbaseManagementClient(MockContext context, RecordedDelegatingHandler handler = null)
         {
             if (handler != null)
             {
                 handler.IsPassThrough = true;
             }
 
-            var client = context.GetServiceClient<RESTAPIforTestBaseClient>(handlers:
+            var client = context.GetServiceClient<TestBaseClient>(handlers:
                 handler ?? new RecordedDelegatingHandler { StatusCodeToReturn = HttpStatusCode.OK });
             return client;
         }

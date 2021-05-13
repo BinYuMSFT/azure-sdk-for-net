@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// OSUpdatesOperations operations.
     /// </summary>
-    internal partial class OSUpdatesOperations : IServiceOperations<RESTAPIforTestBaseClient>, IOSUpdatesOperations
+    internal partial class OSUpdatesOperations : IServiceOperations<TestBaseClient>, IOSUpdatesOperations
     {
         /// <summary>
         /// Initializes a new instance of the OSUpdatesOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal OSUpdatesOperations(RESTAPIforTestBaseClient client)
+        internal OSUpdatesOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists the OS Updates which were tested on this package before.

@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// PackageOperations operations.
     /// </summary>
-    internal partial class PackageOperations : IServiceOperations<RESTAPIforTestBaseClient>, IPackageOperations
+    internal partial class PackageOperations : IServiceOperations<TestBaseClient>, IPackageOperations
     {
         /// <summary>
         /// Initializes a new instance of the PackageOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal PackageOperations(RESTAPIforTestBaseClient client)
+        internal PackageOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Create or replace (overwrite/recreate, with potential downtime) a Test Base

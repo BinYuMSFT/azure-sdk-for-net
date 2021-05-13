@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// FavoriteProcessesOperations operations.
     /// </summary>
-    internal partial class FavoriteProcessesOperations : IServiceOperations<RESTAPIforTestBaseClient>, IFavoriteProcessesOperations
+    internal partial class FavoriteProcessesOperations : IServiceOperations<TestBaseClient>, IFavoriteProcessesOperations
     {
         /// <summary>
         /// Initializes a new instance of the FavoriteProcessesOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal FavoriteProcessesOperations(RESTAPIforTestBaseClient client)
+        internal FavoriteProcessesOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists the favorite processes for a specific package.

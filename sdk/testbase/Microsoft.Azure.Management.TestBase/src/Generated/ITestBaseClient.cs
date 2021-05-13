@@ -20,9 +20,9 @@ namespace Microsoft.TestBase
     using System.Threading.Tasks;
 
     /// <summary>
-    /// REST API for Test Base
+    /// Test Base
     /// </summary>
-    public partial interface IRESTAPIforTestBaseClient : System.IDisposable
+    public partial interface ITestBaseClient : System.IDisposable
     {
         /// <summary>
         /// The base URI of the service.

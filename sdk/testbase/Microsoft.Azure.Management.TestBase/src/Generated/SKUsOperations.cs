@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// SKUsOperations operations.
     /// </summary>
-    internal partial class SKUsOperations : IServiceOperations<RESTAPIforTestBaseClient>, ISKUsOperations
+    internal partial class SKUsOperations : IServiceOperations<TestBaseClient>, ISKUsOperations
     {
         /// <summary>
         /// Initializes a new instance of the SKUsOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal SKUsOperations(RESTAPIforTestBaseClient client)
+        internal SKUsOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists the available SKUs of Test Base Account in a subscription.

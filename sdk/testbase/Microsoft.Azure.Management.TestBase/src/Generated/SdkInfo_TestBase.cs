@@ -13,7 +13,7 @@ namespace Microsoft.TestBase
 
   internal static partial class SdkInfo
   {
-      public static IEnumerable<Tuple<string, string, string>> ApiInfo_RESTAPIforTestBase
+      public static IEnumerable<Tuple<string, string, string>> ApiInfo_TestBase
       {
           get
           {
@@ -52,5 +52,3 @@ namespace Microsoft.TestBase
       }
   }
 }
-
-

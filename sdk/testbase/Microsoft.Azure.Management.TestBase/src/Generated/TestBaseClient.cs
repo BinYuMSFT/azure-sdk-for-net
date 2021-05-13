@@ -24,9 +24,9 @@ namespace Microsoft.TestBase
     using System.Threading.Tasks;
 
     /// <summary>
-    /// REST API for Test Base
+    /// Test Base
     /// </summary>
-    public partial class RESTAPIforTestBaseClient : ServiceClient<RESTAPIforTestBaseClient>, IRESTAPIforTestBaseClient, IAzureClient
+    public partial class TestBaseClient : ServiceClient<TestBaseClient>, ITestBaseClient, IAzureClient
     {
         /// <summary>
         /// The base URI of the service.
@@ -192,31 +192,31 @@ namespace Microsoft.TestBase
         public virtual IOperations Operations { get; private set; }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='httpClient'>
         /// HttpClient to be used
         /// </param>
         /// <param name='disposeHttpClient'>
-        /// True: will dispose the provided httpClient on calling RESTAPIforTestBaseClient.Dispose(). False: will not dispose provided httpClient</param>
-        protected RESTAPIforTestBaseClient(HttpClient httpClient, bool disposeHttpClient) : base(httpClient, disposeHttpClient)
+        /// True: will dispose the provided httpClient on calling TestBaseClient.Dispose(). False: will not dispose provided httpClient</param>
+        protected TestBaseClient(HttpClient httpClient, bool disposeHttpClient) : base(httpClient, disposeHttpClient)
         {
             Initialize();
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='handlers'>
         /// Optional. The delegating handlers to add to the http client pipeline.
         /// </param>
-        protected RESTAPIforTestBaseClient(params DelegatingHandler[] handlers) : base(handlers)
+        protected TestBaseClient(params DelegatingHandler[] handlers) : base(handlers)
         {
             Initialize();
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='rootHandler'>
         /// Optional. The http client handler used to handle http transport.
@@ -224,13 +224,13 @@ namespace Microsoft.TestBase
         /// <param name='handlers'>
         /// Optional. The delegating handlers to add to the http client pipeline.
         /// </param>
-        protected RESTAPIforTestBaseClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : base(rootHandler, handlers)
+        protected TestBaseClient(HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : base(rootHandler, handlers)
         {
             Initialize();
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -241,7 +241,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        protected RESTAPIforTestBaseClient(System.Uri baseUri, params DelegatingHandler[] handlers) : this(handlers)
+        protected TestBaseClient(System.Uri baseUri, params DelegatingHandler[] handlers) : this(handlers)
         {
             if (baseUri == null)
             {
@@ -251,7 +251,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -265,7 +265,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        protected RESTAPIforTestBaseClient(System.Uri baseUri, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
+        protected TestBaseClient(System.Uri baseUri, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
         {
             if (baseUri == null)
             {
@@ -275,7 +275,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='credentials'>
         /// Required. Credentials needed for the client to connect to Azure.
@@ -286,7 +286,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public RESTAPIforTestBaseClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers) : this(handlers)
+        public TestBaseClient(ServiceClientCredentials credentials, params DelegatingHandler[] handlers) : this(handlers)
         {
             if (credentials == null)
             {
@@ -300,7 +300,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='credentials'>
         /// Required. Credentials needed for the client to connect to Azure.
@@ -309,11 +309,11 @@ namespace Microsoft.TestBase
         /// HttpClient to be used
         /// </param>
         /// <param name='disposeHttpClient'>
-        /// True: will dispose the provided httpClient on calling RESTAPIforTestBaseClient.Dispose(). False: will not dispose provided httpClient</param>
+        /// True: will dispose the provided httpClient on calling TestBaseClient.Dispose(). False: will not dispose provided httpClient</param>
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public RESTAPIforTestBaseClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient) : this(httpClient, disposeHttpClient)
+        public TestBaseClient(ServiceClientCredentials credentials, HttpClient httpClient, bool disposeHttpClient) : this(httpClient, disposeHttpClient)
         {
             if (credentials == null)
             {
@@ -327,7 +327,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='credentials'>
         /// Required. Credentials needed for the client to connect to Azure.
@@ -341,7 +341,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public RESTAPIforTestBaseClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
+        public TestBaseClient(ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
         {
             if (credentials == null)
             {
@@ -355,7 +355,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -369,7 +369,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public RESTAPIforTestBaseClient(System.Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers) : this(handlers)
+        public TestBaseClient(System.Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers) : this(handlers)
         {
             if (baseUri == null)
             {
@@ -388,7 +388,7 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Initializes a new instance of the RESTAPIforTestBaseClient class.
+        /// Initializes a new instance of the TestBaseClient class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -405,7 +405,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        public RESTAPIforTestBaseClient(System.Uri baseUri, ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
+        public TestBaseClient(System.Uri baseUri, ServiceClientCredentials credentials, HttpClientHandler rootHandler, params DelegatingHandler[] handlers) : this(rootHandler, handlers)
         {
             if (baseUri == null)
             {

@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// AnalysisResultOperations operations.
     /// </summary>
-    internal partial class AnalysisResultOperations : IServiceOperations<RESTAPIforTestBaseClient>, IAnalysisResultOperations
+    internal partial class AnalysisResultOperations : IServiceOperations<TestBaseClient>, IAnalysisResultOperations
     {
         /// <summary>
         /// Initializes a new instance of the AnalysisResultOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal AnalysisResultOperations(RESTAPIforTestBaseClient client)
+        internal AnalysisResultOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Gets an Analysis Result of a Test Result by name.

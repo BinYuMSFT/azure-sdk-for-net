@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountTestTypesOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountTestTypesOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountTestTypesOperations
+    internal partial class TestBaseAccountTestTypesOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountTestTypesOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountTestTypesOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountTestTypesOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountTestTypesOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists all the test types of a Test Base Account.

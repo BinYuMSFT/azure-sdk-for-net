@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountsOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountsOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountsOperations
+    internal partial class TestBaseAccountsOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountsOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountsOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountsOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountsOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Lists all the Test Base Accounts in a subscription. This API is required by

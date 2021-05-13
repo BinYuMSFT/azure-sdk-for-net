@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestSummaryOperations operations.
     /// </summary>
-    internal partial class TestSummaryOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestSummaryOperations
+    internal partial class TestSummaryOperations : IServiceOperations<TestBaseClient>, ITestSummaryOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestSummaryOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestSummaryOperations(RESTAPIforTestBaseClient client)
+        internal TestSummaryOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Gets a Test Summary with specific name from all the Test Summaries of all

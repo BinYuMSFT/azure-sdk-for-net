@@ -17,9 +17,9 @@ namespace Microsoft.TestBase
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Extension methods for RESTAPIforTestBaseClient.
+    /// Extension methods for TestBaseClient.
     /// </summary>
-    public static partial class RESTAPIforTestBaseClientExtensions
+    public static partial class TestBaseClientExtensions
     {
             /// <summary>
             /// Gets the file upload URL of a Test Base Account.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
             /// <param name='blobName'>
             /// The custom file name of the uploaded blob.
             /// </param>
-            public static FileUploadURLResponse TestBaseAccountGetFileUploadUrl(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string blobName = default(string))
+            public static FileUploadURLResponse TestBaseAccountGetFileUploadUrl(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string blobName = default(string))
             {
                 return operations.TestBaseAccountGetFileUploadUrlAsync(resourceGroupName, testBaseAccountName, blobName).GetAwaiter().GetResult();
             }
@@ -59,7 +59,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<FileUploadURLResponse> TestBaseAccountGetFileUploadUrlAsync(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string blobName = default(string), CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<FileUploadURLResponse> TestBaseAccountGetFileUploadUrlAsync(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string blobName = default(string), CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.TestBaseAccountGetFileUploadUrlWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, blobName, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -84,7 +84,7 @@ namespace Microsoft.TestBase
             /// Parameters supplied to the Test Base Package CheckNameAvailability
             /// operation.
             /// </param>
-            public static CheckNameAvailabilityResult CheckPackageNameAvailability(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, PackageCheckNameAvailabilityParameters parameters)
+            public static CheckNameAvailabilityResult CheckPackageNameAvailability(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, PackageCheckNameAvailabilityParameters parameters)
             {
                 return operations.CheckPackageNameAvailabilityAsync(resourceGroupName, testBaseAccountName, parameters).GetAwaiter().GetResult();
             }
@@ -109,7 +109,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<CheckNameAvailabilityResult> CheckPackageNameAvailabilityAsync(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, PackageCheckNameAvailabilityParameters parameters, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<CheckNameAvailabilityResult> CheckPackageNameAvailabilityAsync(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, PackageCheckNameAvailabilityParameters parameters, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.CheckPackageNameAvailabilityWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, parameters, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -132,7 +132,7 @@ namespace Microsoft.TestBase
             /// <param name='packageName'>
             /// The resource name of the Test Base Package.
             /// </param>
-            public static DownloadURLResponse PackageGetDownloadURL(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            public static DownloadURLResponse PackageGetDownloadURL(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName)
             {
                 return operations.PackageGetDownloadURLAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
             }
@@ -155,7 +155,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<DownloadURLResponse> PackageGetDownloadURLAsync(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<DownloadURLResponse> PackageGetDownloadURLAsync(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.PackageGetDownloadURLWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -181,7 +181,7 @@ namespace Microsoft.TestBase
             /// <param name='testResultName'>
             /// The Test Result Name. It equals to {osName}-{TestResultId} string.
             /// </param>
-            public static DownloadURLResponse TestResultGetDownloadURL(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName)
+            public static DownloadURLResponse TestResultGetDownloadURL(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName)
             {
                 return operations.TestResultGetDownloadURLAsync(resourceGroupName, testBaseAccountName, packageName, testResultName).GetAwaiter().GetResult();
             }
@@ -207,7 +207,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<DownloadURLResponse> TestResultGetDownloadURLAsync(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<DownloadURLResponse> TestResultGetDownloadURLAsync(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.TestResultGetDownloadURLWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, testResultName, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -233,7 +233,7 @@ namespace Microsoft.TestBase
             /// <param name='testResultName'>
             /// The Test Result Name. It equals to {osName}-{TestResultId} string.
             /// </param>
-            public static DownloadURLResponse TestResultGetVideoDownloadURL(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName)
+            public static DownloadURLResponse TestResultGetVideoDownloadURL(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName)
             {
                 return operations.TestResultGetVideoDownloadURLAsync(resourceGroupName, testBaseAccountName, packageName, testResultName).GetAwaiter().GetResult();
             }
@@ -259,7 +259,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<DownloadURLResponse> TestResultGetVideoDownloadURLAsync(this IRESTAPIforTestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<DownloadURLResponse> TestResultGetVideoDownloadURLAsync(this ITestBaseClient operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.TestResultGetVideoDownloadURLWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, testResultName, null, cancellationToken).ConfigureAwait(false))
                 {

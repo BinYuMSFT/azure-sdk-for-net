@@ -25,7 +25,7 @@ namespace Microsoft.TestBase
     /// <summary>
     /// TestBaseAccountOperations operations.
     /// </summary>
-    internal partial class TestBaseAccountOperations : IServiceOperations<RESTAPIforTestBaseClient>, ITestBaseAccountOperations
+    internal partial class TestBaseAccountOperations : IServiceOperations<TestBaseClient>, ITestBaseAccountOperations
     {
         /// <summary>
         /// Initializes a new instance of the TestBaseAccountOperations class.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal TestBaseAccountOperations(RESTAPIforTestBaseClient client)
+        internal TestBaseAccountOperations(TestBaseClient client)
         {
             if (client == null)
             {
@@ -46,9 +46,9 @@ namespace Microsoft.TestBase
         }
 
         /// <summary>
-        /// Gets a reference to the RESTAPIforTestBaseClient
+        /// Gets a reference to the TestBaseClient
         /// </summary>
-        public RESTAPIforTestBaseClient Client { get; private set; }
+        public TestBaseClient Client { get; private set; }
 
         /// <summary>
         /// Create or replace (overwrite/recreate, with potential downtime) a Test Base
