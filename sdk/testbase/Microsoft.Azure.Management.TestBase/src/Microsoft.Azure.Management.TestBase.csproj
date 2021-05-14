@@ -6,7 +6,7 @@
 <PropertyGroup>
     <PackageId>Microsoft.Azure.Management.TestBase</PackageId>
     <Description>
-      Description for TestBaseAccounts.
+      Provides management functionality for Microsoft TestBase for M365.
     </Description>
     <Version>0.0.0.1-preview</Version>
     <AssemblyName>Microsoft.Azure.Management.TestBase</AssemblyName>
