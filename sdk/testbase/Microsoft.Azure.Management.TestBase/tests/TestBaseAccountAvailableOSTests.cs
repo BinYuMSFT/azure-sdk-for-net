@@ -20,7 +20,7 @@ Windows-10-1803 , All-Future-OS-Updates
          */
 
         string availableOSResourceName = "Windows-10-1803";
-        string nextPageLink=null;
+        string nextPageLink = null;
 
         [Fact]
         public void TestAvailableOS()
@@ -31,16 +31,16 @@ Windows-10-1803 , All-Future-OS-Updates
 
                 try
                 {
-var result = t_TestBaseClient.TestBaseAccountAvailableOSs.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, OsUpdateType.SecurityUpdate).GetAwaiter().GetResult();
-                Assert.NotNull(result);
-                Assert.NotNull(result.Body);
+                    var result = t_TestBaseClient.TestBaseAccountAvailableOSs.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, OsUpdateType.SecurityUpdate).GetAwaiter().GetResult();
+                    Assert.NotNull(result);
+                    Assert.NotNull(result.Body);
                 }
                 catch (Exception ex)
                 {
                     Assert.Contains("NotFound", ex.Message);
                 }
 
-                Assert.ThrowsAsync<ErrorResponseException>(()=>t_TestBaseClient.TestBaseAccountAvailableOSs.ListNextWithHttpMessagesAsync(nextPageLink));
+                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.TestBaseAccountAvailableOSs.ListNextWithHttpMessagesAsync(nextPageLink));
 
 
                 Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.TestBaseAccountAvailableOS.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, ErrorValue));

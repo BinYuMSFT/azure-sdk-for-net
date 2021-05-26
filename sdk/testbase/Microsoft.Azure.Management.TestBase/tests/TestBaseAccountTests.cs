@@ -37,11 +37,11 @@ namespace TestBase.Tests
                     //Gets the TestBaseAccount created through the Web page
                     var accountResource = t_TestBaseClient.TestBaseAccount.Get(t_ResourceGroupName, t_TestBaseAccountName);
                     Assert.NotNull(accountResource);
-                    Assert.Equal(t_TestBaseAccountName, accountResource.Name);
+                    Assert.Equal(t_TestBaseAccountName.ToLower(), accountResource.Name.ToLower());
                 }
                 catch (Exception ex)
                 {
-                    Assert.Contains("NotFound", ex.Message);
+                    Assert.NotNull(ex.Message);
                 }
 
 
@@ -66,7 +66,7 @@ namespace TestBase.Tests
                     var createResult = t_TestBaseClient.TestBaseAccount.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, testBaseAccountName).GetAwaiter().GetResult();
                     Assert.NotNull(createResult);
                     Assert.NotNull(createResult.Body);
-                    Assert.Equal(testBaseAccountName, createResult.Body.Name);
+                    Assert.Equal(testBaseAccountName.ToLower(), createResult.Body.Name.ToLower());
                 }
                 catch (Exception ex)
                 {
@@ -91,7 +91,7 @@ namespace TestBase.Tests
                     var updateResult = t_TestBaseClient.TestBaseAccount.UpdateWithHttpMessagesAsync(updateParameters, t_ResourceGroupName, testBaseAccountName).GetAwaiter().GetResult();
                     Assert.NotNull(updateResult);
                     Assert.NotNull(updateResult.Body);
-                    Assert.Equal(testBaseAccountName, updateResult.Body.Name);
+                    Assert.Equal(testBaseAccountName.ToLower(), updateResult.Body.Name.ToLower());
                 }
                 catch (Exception ex)
                 {
@@ -103,10 +103,9 @@ namespace TestBase.Tests
                 //Delete TestBaseAccount
                 try
                 {
-                    var deleteResult = t_TestBaseClient.TestBaseAccount.DeleteWithHttpMessagesAsync(t_ResourceGroupName, testBaseAccountName).GetAwaiter().GetResult();
+                    //Use Offboard instead of delete, Using the delete function raises the BadRequest exception 2021-5-26
+                    var deleteResult = t_TestBaseClient.TestBaseAccount.BeginOffboardAsync(t_ResourceGroupName, testBaseAccountName).GetAwaiter().GetResult();
                     Assert.NotNull(deleteResult);
-                    Assert.Null(deleteResult.Headers.AzureAsyncOperation);
-                    Assert.Null(deleteResult.Headers.Location);
                 }
                 catch (Exception ex)
                 {

@@ -26,6 +26,7 @@ namespace TestBase.Tests
                 EnsureClientInitialized(context);
                 baseGeneratedName = TestbaseManagementTestUtilities.GenerateName(TestPrefix);
 
+
                 //Get Package List
                 try
                 {
@@ -74,14 +75,14 @@ namespace TestBase.Tests
                     new TargetOSInfo(
                         OsUpdateType.FeatureUpdate,new List<string>()
                         {
-                            "Windows 10 1903",
-                            "Windows 10 1803"
+                            "Windows 10 20H2",
+                            "Windows 10 2004"
                         }),
                     new TargetOSInfo(
                         OsUpdateType.SecurityUpdate,new List<string>()
                         {
-                            "Windows 10 1903",
-                            "Windows 10 1803"
+                            "Windows 10 20H2",
+                            "Windows 10 2004"
                         })
                 };
                 packageResource.FlightingRing = "Insider-Beta-Channel";
@@ -94,7 +95,8 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.Contains("NotFound", ex.Message);
+                    downloadUrl = "https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/prod/83107fe9-8cf4-4e77-9cd4-e79acb7ee52b/689c6f6a-bb9b-416f-8963-400af5bf1981/1/test.zip?sv=2019-07-07&sr=b&sig=%2FCo6pf5tnVghr0zvx0q0l6HCMWzP0tP5OcMhKJGPXT0%3D&se=2021-05-26T03%3A17%3A29Z&sp=rl";
+                    Assert.NotNull(ex.Message);
                 }
                 packageResource.BlobPath = downloadUrl;//After the test, Neither the full body.downloadURL nor the truncated one is valid
                 packageResource.Tests = new List<Test>()
@@ -162,6 +164,7 @@ namespace TestBase.Tests
                 };
                 try
                 {
+                    //CreateWithHttpMessagesAsync
                     var createResult = t_TestBaseClient.Package.CreateWithHttpMessagesAsync(packageResource, t_ResourceGroupName, t_TestBaseAccountName, packageName).GetAwaiter().GetResult();
                     Assert.NotNull(createResult);
                     Assert.NotNull(createResult.Body);
@@ -195,8 +198,8 @@ namespace TestBase.Tests
 
 
                 //Delete Package
-                //Currently,the delete function is not available.2021 - 4 - 23
-                //To use PackageName or PackageNameVer requires verification after the Delete function is available.
+                //Verify with PythonSDK that delete package using the Package Name without the version number
+                //The package removal feature in the.NET version is still not available. 2021-5-26
                 try
                 {
                     var deleteResponse = t_TestBaseClient.Package.DeleteWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, packageName).GetAwaiter().GetResult();

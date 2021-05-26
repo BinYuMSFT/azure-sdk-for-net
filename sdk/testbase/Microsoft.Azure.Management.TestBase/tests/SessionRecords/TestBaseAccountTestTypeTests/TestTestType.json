@@ -7,16 +7,16 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "090c222b-cbd4-4562-9182-1cb409bbd298"
+          "64fcab9c-f7b9-4b40-835e-3b47feb8929b"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.29916.01",
+          "FxVersion/4.6.30015.01",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19042.",
-          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
         ]
       },
       "ResponseHeaders": {
@@ -27,19 +27,19 @@
           "no-cache"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14996"
+          "14986"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "4a45e91a-de52-497e-a481-79fa2d5701a5"
+          "1c2edf5b-f29f-4817-9729-f7f40896728b"
         ],
         "x-ms-correlation-request-id": [
-          "1f2fb12b-46a0-4b5e-bcf6-ee0276404558"
+          "37a5713e-4486-4dd1-992b-b0bd89668164"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210428T031558Z:1f2fb12b-46a0-4b5e-bcf6-ee0276404558"
+          "CENTRALUS:20210526T093153Z:37a5713e-4486-4dd1-992b-b0bd89668164"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -47,11 +47,14 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
         "X-MSEdge-Ref": [
-          "Ref A: 75BBAE489073466AB09F5FA0E78B67E5 Ref B: SGEEDGE0713 Ref C: 2021-04-28T03:15:58Z"
+          "Ref A: 2865DCAD79864679BB6101F745021DBC Ref B: HKG30EDGE0813 Ref C: 2021-05-26T09:31:53Z"
         ],
         "Date": [
-          "Wed, 28 Apr 2021 03:15:58 GMT"
+          "Wed, 26 May 2021 09:31:53 GMT"
         ],
         "Content-Length": [
           "533"
@@ -67,22 +70,22 @@
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/testTypes/20210428111559312?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvdGVzdFR5cGVzLzIwMjEwNDI4MTExNTU5MzEyP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/testTypes/20210526173154185?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvdGVzdFR5cGVzLzIwMjEwNTI2MTczMTU0MTg1P2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "06b4a8b9-5128-49f4-899e-e155962cdebe"
+          "a68c0ff4-0f6f-44c8-aefc-73fae3cf5590"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.29916.01",
+          "FxVersion/4.6.30015.01",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19042.",
-          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
         ]
       },
       "ResponseHeaders": {
@@ -93,10 +96,10 @@
           "no-cache"
         ],
         "Set-Cookie": [
-          "ARRAffinity=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=a6f2a1ce4d789a9e5bddaea1d33122d5b6c053c67fc5e0842ac85792aaaa3c66;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
+          "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14995"
+          "14985"
         ],
         "x-ms-providerhub-traffic": [
           "True"
@@ -105,16 +108,16 @@
           "service"
         ],
         "x-ms-request-id": [
-          "395a6dc2-e3a1-41ee-bf34-21d5232ebf11"
+          "e078d74b-a3ca-4369-96dc-966313ffa90a"
         ],
         "x-ms-correlation-request-id": [
-          "31a48473-4180-4a30-8287-a4bd9b74d7dd"
+          "8ce4b5d9-6ff2-4c86-af8e-2cb7ccb11f55"
         ],
         "X-Powered-By": [
           "ASP.NET"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210428T031559Z:31a48473-4180-4a30-8287-a4bd9b74d7dd"
+          "CENTRALUS:20210526T093154Z:8ce4b5d9-6ff2-4c86-af8e-2cb7ccb11f55"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -122,11 +125,14 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
         "X-MSEdge-Ref": [
-          "Ref A: 7DE4BC6CA1224FFD9236B9DC3544BD93 Ref B: SGEEDGE0713 Ref C: 2021-04-28T03:15:59Z"
+          "Ref A: E36D66E750A84C598EF1F898867BD3B8 Ref B: HKG30EDGE0813 Ref C: 2021-05-26T09:31:53Z"
         ],
         "Date": [
-          "Wed, 28 Apr 2021 03:15:58 GMT"
+          "Wed, 26 May 2021 09:31:54 GMT"
         ],
         "Content-Length": [
           "274"
@@ -138,7 +144,7 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/testTypes/20210428111559312' with error: Not Found\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/testTypes/20210526173154185' with error: Not Found\"\r\n  }\r\n}",
       "StatusCode": 404
     },
     {
@@ -148,16 +154,16 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "4711c065-4a8e-4816-8535-3686306c7e36"
+          "e7d02e97-6718-4eaf-b90d-09e2a432fa25"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.29916.01",
+          "FxVersion/4.6.30015.01",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19042.",
-          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
         ]
       },
       "ResponseHeaders": {
@@ -168,19 +174,19 @@
           "no-cache"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14994"
+          "14969"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "e1d9bc4e-5a75-410f-8edc-5bdba7f15770"
+          "7fcc35f4-e890-4436-a93b-bc2568fbb056"
         ],
         "x-ms-correlation-request-id": [
-          "2bf4013e-eb5b-4306-8de9-eb6f2d694ede"
+          "f4e9e3eb-c0c7-4548-bfaa-4fff0428de54"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210428T031600Z:2bf4013e-eb5b-4306-8de9-eb6f2d694ede"
+          "CENTRALUS:20210526T093154Z:f4e9e3eb-c0c7-4548-bfaa-4fff0428de54"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -188,11 +194,14 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
         "X-MSEdge-Ref": [
-          "Ref A: 2793202EB17747D2BDF8E9C97C4520A1 Ref B: SGEEDGE0719 Ref C: 2021-04-28T03:15:59Z"
+          "Ref A: B6DA93DF37F244809A880A0F5C8B0444 Ref B: HKG30EDGE0114 Ref C: 2021-05-26T09:31:54Z"
         ],
         "Date": [
-          "Wed, 28 Apr 2021 03:15:59 GMT"
+          "Wed, 26 May 2021 09:31:54 GMT"
         ],
         "Content-Length": [
           "260"

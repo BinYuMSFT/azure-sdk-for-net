@@ -7,16 +7,16 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "b8565b43-98b6-4383-abb0-5ca5f7c2a5c3"
+          "c4586857-4a96-4067-a65f-627a61f639fa"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.29916.01",
+          "FxVersion/4.6.30015.01",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19042.",
-          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
         ]
       },
       "ResponseHeaders": {
@@ -26,20 +26,17 @@
         "Pragma": [
           "no-cache"
         ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14991"
-        ],
-        "x-ms-providerhub-traffic": [
-          "True"
+        "x-ms-failure-cause": [
+          "gateway"
         ],
         "x-ms-request-id": [
-          "280b0ab7-094f-40ca-a07e-4ada4523b939"
+          "1e3a5f4a-81ce-4937-a727-f3fd4d1ee811"
         ],
         "x-ms-correlation-request-id": [
-          "055d0e65-8d0f-4efb-8ae1-df8abaa5d56f"
+          "1e3a5f4a-81ce-4937-a727-f3fd4d1ee811"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210428T031724Z:055d0e65-8d0f-4efb-8ae1-df8abaa5d56f"
+          "CENTRALUS:20210526T093145Z:1e3a5f4a-81ce-4937-a727-f3fd4d1ee811"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -47,14 +44,17 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
         "X-MSEdge-Ref": [
-          "Ref A: 0F400F3C92AF45DA821FCEF600D8849D Ref B: SGEEDGE0720 Ref C: 2021-04-28T03:17:24Z"
+          "Ref A: 4777B690741B4E3BB211702053D8BA0D Ref B: HKG30EDGE0414 Ref C: 2021-05-26T09:31:44Z"
         ],
         "Date": [
-          "Wed, 28 Apr 2021 03:17:24 GMT"
+          "Wed, 26 May 2021 09:31:45 GMT"
         ],
         "Content-Length": [
-          "274"
+          "181"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -63,8 +63,8 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/FavoriteProcesses/AM_Base.exe\",\r\n      \"properties\": {\r\n        \"actualProcessName\": \"AM_Base.exe\"\r\n      }\r\n    }\r\n  ]\r\n}",
-      "StatusCode": 200
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ParentResourceNotFound\",\r\n    \"message\": \"Can not perform requested operation on nested resource. Parent resource 'testBaseAccount_kaifa/package1_kaifa-1.0' not found.\"\r\n  }\r\n}",
+      "StatusCode": 404
     },
     {
       "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/favoriteProcesses/AM_Base.exe?api-version=2020-12-16-preview",
@@ -73,16 +73,16 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "26c4c8a2-370f-44d4-9d70-772070c68296"
+          "e26095a3-adc0-4fdf-a800-67d804f6d12e"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.29916.01",
+          "FxVersion/4.6.30015.01",
           "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19042.",
-          "Microsoft.TestBase.RESTAPIforTestBaseClient/1.0.0.0"
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
         ]
       },
       "ResponseHeaders": {
@@ -92,20 +92,17 @@
         "Pragma": [
           "no-cache"
         ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14992"
-        ],
-        "x-ms-providerhub-traffic": [
-          "True"
+        "x-ms-failure-cause": [
+          "gateway"
         ],
         "x-ms-request-id": [
-          "e080206d-922c-43d8-a357-5e8f1f6fc62e"
+          "a77a1984-9b02-4da0-bd3d-d4a6ec71fc51"
         ],
         "x-ms-correlation-request-id": [
-          "b0c92a16-29e6-4bf9-b241-05e85735675f"
+          "a77a1984-9b02-4da0-bd3d-d4a6ec71fc51"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210428T031725Z:b0c92a16-29e6-4bf9-b241-05e85735675f"
+          "CENTRALUS:20210526T093145Z:a77a1984-9b02-4da0-bd3d-d4a6ec71fc51"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -113,14 +110,17 @@
         "X-Content-Type-Options": [
           "nosniff"
         ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
         "X-MSEdge-Ref": [
-          "Ref A: E122EEA04AF440E388F222D93BEB29D6 Ref B: SGEEDGE0720 Ref C: 2021-04-28T03:17:24Z"
+          "Ref A: FF1CDFDAC9AA48A88A4F64A2CF001619 Ref B: HKG30EDGE0414 Ref C: 2021-05-26T09:31:45Z"
         ],
         "Date": [
-          "Wed, 28 Apr 2021 03:17:24 GMT"
+          "Wed, 26 May 2021 09:31:45 GMT"
         ],
         "Content-Length": [
-          "262"
+          "181"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -129,8 +129,8 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package1_kaifa-1.0/favoriteProcesses/AM_Base.exe\",\r\n  \"properties\": {\r\n    \"actualProcessName\": \"AM_Base.exe\"\r\n  }\r\n}",
-      "StatusCode": 200
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ParentResourceNotFound\",\r\n    \"message\": \"Can not perform requested operation on nested resource. Parent resource 'testBaseAccount_kaifa/package1_kaifa-1.0' not found.\"\r\n  }\r\n}",
+      "StatusCode": 404
     }
   ],
   "Names": {},
