@@ -23,12 +23,12 @@ namespace Microsoft.TestBase
     using System.Threading.Tasks;
 
     /// <summary>
-    /// SKUsOperations operations.
+    /// SkusOperations operations.
     /// </summary>
-    internal partial class SKUsOperations : IServiceOperations<TestBaseClient>, ISKUsOperations
+    internal partial class SkusOperations : IServiceOperations<TestBaseClient>, ISkusOperations
     {
         /// <summary>
-        /// Initializes a new instance of the SKUsOperations class.
+        /// Initializes a new instance of the SkusOperations class.
         /// </summary>
         /// <param name='client'>
         /// Reference to the service client.
@@ -36,7 +36,7 @@ namespace Microsoft.TestBase
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal SKUsOperations(TestBaseClient client)
+        internal SkusOperations(TestBaseClient client)
         {
             if (client == null)
             {

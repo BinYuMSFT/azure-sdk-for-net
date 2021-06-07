@@ -62,6 +62,54 @@ namespace Microsoft.TestBase
             }
 
             /// <summary>
+            /// Gets a Test Summary with specific name from all the Test Summaries of all
+            /// the packages under a Test Base Account.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='testSummaryName'>
+            /// The name of the Test Summary.
+            /// </param>
+            public static TestSummaryResource Get(this ITestSummariesOperations operations, string resourceGroupName, string testBaseAccountName, string testSummaryName)
+            {
+                return operations.GetAsync(resourceGroupName, testBaseAccountName, testSummaryName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets a Test Summary with specific name from all the Test Summaries of all
+            /// the packages under a Test Base Account.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='testSummaryName'>
+            /// The name of the Test Summary.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<TestSummaryResource> GetAsync(this ITestSummariesOperations operations, string resourceGroupName, string testBaseAccountName, string testSummaryName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, testSummaryName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
             /// Lists the Test Summaries of all the packages under a Test Base Account.
             /// </summary>
             /// <param name='operations'>

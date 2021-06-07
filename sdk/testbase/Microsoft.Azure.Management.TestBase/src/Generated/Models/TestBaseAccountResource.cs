@@ -28,6 +28,7 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         public TestBaseAccountResource()
         {
+            Sku = new TestBaseAccountSKU();
             CustomInit();
         }
 
@@ -47,12 +48,15 @@ namespace Microsoft.TestBase.Models
         /// <param name="provisioningState">The provisioning state of the
         /// resource. Possible values include: 'Succeeded', 'Failed',
         /// 'Cancelled', 'Creating', 'Deleting', 'Updating'</param>
-        public TestBaseAccountResource(string location, TestBaseAccountSKU sku, string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), string etag = default(string), SystemData systemData = default(SystemData), string provisioningState = default(string))
+        /// <param name="accessLevel">The access level of the Test Base
+        /// Account.</param>
+        public TestBaseAccountResource(string location, TestBaseAccountSKU sku, string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), string etag = default(string), SystemData systemData = default(SystemData), string provisioningState = default(string), string accessLevel = default(string))
             : base(location, id, name, type, tags, etag)
         {
             SystemData = systemData;
             ProvisioningState = provisioningState;
             Sku = sku;
+            AccessLevel = accessLevel;
             CustomInit();
         }
 
@@ -80,6 +84,12 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.sku")]
         public TestBaseAccountSKU Sku { get; set; }
+
+        /// <summary>
+        /// Gets the access level of the Test Base Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.accessLevel")]
+        public string AccessLevel { get; private set; }
 
     }
 }

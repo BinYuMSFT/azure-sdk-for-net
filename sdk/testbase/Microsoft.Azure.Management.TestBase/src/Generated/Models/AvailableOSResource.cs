@@ -37,13 +37,28 @@ namespace Microsoft.TestBase.Models
         /// <param name="type">Resource type.</param>
         /// <param name="systemData">The system metadata relating to this
         /// resource</param>
-        /// <param name="actualOSName">The actual name of an Available OS of a
-        /// Test Base.</param>
-        public AvailableOSResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string actualOSName = default(string))
+        /// <param name="osId">The Id of an Available OS of a Test Base
+        /// Account.</param>
+        /// <param name="osName">The name of an Available OS of a Test Base
+        /// Account.</param>
+        /// <param name="osVersion">The version of an Available OS of a Test
+        /// Base Account.</param>
+        /// <param name="insiderChannel">The insider channel of an Available OS
+        /// of a Test Base Account.</param>
+        /// <param name="osUpdateType">The OS update type of an Available OS of
+        /// a Test Base Account.</param>
+        /// <param name="osPlatform">The Platform of an Available OS of a Test
+        /// Base Account.</param>
+        public AvailableOSResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string osId = default(string), string osName = default(string), string osVersion = default(string), string insiderChannel = default(string), string osUpdateType = default(string), string osPlatform = default(string))
             : base(id, name, type)
         {
             SystemData = systemData;
-            ActualOSName = actualOSName;
+            OsId = osId;
+            OsName = osName;
+            OsVersion = osVersion;
+            InsiderChannel = insiderChannel;
+            OsUpdateType = osUpdateType;
+            OsPlatform = osPlatform;
             CustomInit();
         }
 
@@ -59,10 +74,43 @@ namespace Microsoft.TestBase.Models
         public SystemData SystemData { get; set; }
 
         /// <summary>
-        /// Gets or sets the actual name of an Available OS of a Test Base.
+        /// Gets or sets the Id of an Available OS of a Test Base Account.
         /// </summary>
-        [JsonProperty(PropertyName = "properties.actualOSName")]
-        public string ActualOSName { get; set; }
+        [JsonProperty(PropertyName = "properties.osId")]
+        public string OsId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of an Available OS of a Test Base Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.osName")]
+        public string OsName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the version of an Available OS of a Test Base Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.osVersion")]
+        public string OsVersion { get; set; }
+
+        /// <summary>
+        /// Gets or sets the insider channel of an Available OS of a Test Base
+        /// Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.insiderChannel")]
+        public string InsiderChannel { get; set; }
+
+        /// <summary>
+        /// Gets or sets the OS update type of an Available OS of a Test Base
+        /// Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.osUpdateType")]
+        public string OsUpdateType { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Platform of an Available OS of a Test Base
+        /// Account.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.osPlatform")]
+        public string OsPlatform { get; set; }
 
     }
 }

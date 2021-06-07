@@ -14,10 +14,6 @@ namespace Microsoft.TestBase
     using Microsoft.Rest.Azure;
     using Models;
     using Newtonsoft.Json;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Threading;
-    using System.Threading.Tasks;
 
     /// <summary>
     /// Test Base
@@ -74,9 +70,9 @@ namespace Microsoft.TestBase
 
 
         /// <summary>
-        /// Gets the ISKUsOperations.
+        /// Gets the ISkusOperations.
         /// </summary>
-        ISKUsOperations SKUs { get; }
+        ISkusOperations Skus { get; }
 
         /// <summary>
         /// Gets the ITestBaseAccountsOperations.
@@ -84,44 +80,24 @@ namespace Microsoft.TestBase
         ITestBaseAccountsOperations TestBaseAccounts { get; }
 
         /// <summary>
-        /// Gets the ITestBaseAccountOperations.
+        /// Gets the IUsageOperations.
         /// </summary>
-        ITestBaseAccountOperations TestBaseAccount { get; }
+        IUsageOperations Usage { get; }
 
         /// <summary>
-        /// Gets the ITestBaseAccountUsageOperations.
+        /// Gets the IAvailableOSOperations.
         /// </summary>
-        ITestBaseAccountUsageOperations TestBaseAccountUsage { get; }
+        IAvailableOSOperations AvailableOS { get; }
 
         /// <summary>
-        /// Gets the ITestBaseAccountAvailableOSsOperations.
+        /// Gets the IFlightingRingsOperations.
         /// </summary>
-        ITestBaseAccountAvailableOSsOperations TestBaseAccountAvailableOSs { get; }
+        IFlightingRingsOperations FlightingRings { get; }
 
         /// <summary>
-        /// Gets the ITestBaseAccountAvailableOSOperations.
+        /// Gets the ITestTypesOperations.
         /// </summary>
-        ITestBaseAccountAvailableOSOperations TestBaseAccountAvailableOS { get; }
-
-        /// <summary>
-        /// Gets the ITestBaseAccountFlightingRingsOperations.
-        /// </summary>
-        ITestBaseAccountFlightingRingsOperations TestBaseAccountFlightingRings { get; }
-
-        /// <summary>
-        /// Gets the ITestBaseAccountFlightingRingOperations.
-        /// </summary>
-        ITestBaseAccountFlightingRingOperations TestBaseAccountFlightingRing { get; }
-
-        /// <summary>
-        /// Gets the ITestBaseAccountTestTypesOperations.
-        /// </summary>
-        ITestBaseAccountTestTypesOperations TestBaseAccountTestTypes { get; }
-
-        /// <summary>
-        /// Gets the ITestBaseAccountTestTypeOperations.
-        /// </summary>
-        ITestBaseAccountTestTypeOperations TestBaseAccountTestType { get; }
+        ITestTypesOperations TestTypes { get; }
 
         /// <summary>
         /// Gets the IPackagesOperations.
@@ -129,19 +105,9 @@ namespace Microsoft.TestBase
         IPackagesOperations Packages { get; }
 
         /// <summary>
-        /// Gets the IPackageOperations.
-        /// </summary>
-        IPackageOperations Package { get; }
-
-        /// <summary>
         /// Gets the ITestSummariesOperations.
         /// </summary>
         ITestSummariesOperations TestSummaries { get; }
-
-        /// <summary>
-        /// Gets the ITestSummaryOperations.
-        /// </summary>
-        ITestSummaryOperations TestSummary { get; }
 
         /// <summary>
         /// Gets the ITestResultsOperations.
@@ -149,19 +115,9 @@ namespace Microsoft.TestBase
         ITestResultsOperations TestResults { get; }
 
         /// <summary>
-        /// Gets the ITestResultOperations.
-        /// </summary>
-        ITestResultOperations TestResult { get; }
-
-        /// <summary>
         /// Gets the IOSUpdatesOperations.
         /// </summary>
         IOSUpdatesOperations OSUpdates { get; }
-
-        /// <summary>
-        /// Gets the IOSUpdateOperations.
-        /// </summary>
-        IOSUpdateOperations OSUpdate { get; }
 
         /// <summary>
         /// Gets the IFavoriteProcessesOperations.
@@ -169,132 +125,24 @@ namespace Microsoft.TestBase
         IFavoriteProcessesOperations FavoriteProcesses { get; }
 
         /// <summary>
-        /// Gets the IFavoriteProcessOperations.
-        /// </summary>
-        IFavoriteProcessOperations FavoriteProcess { get; }
-
-        /// <summary>
         /// Gets the IAnalysisResultsOperations.
         /// </summary>
         IAnalysisResultsOperations AnalysisResults { get; }
 
         /// <summary>
-        /// Gets the IAnalysisResultOperations.
+        /// Gets the IEmailEventsOperations.
         /// </summary>
-        IAnalysisResultOperations AnalysisResult { get; }
+        IEmailEventsOperations EmailEvents { get; }
+
+        /// <summary>
+        /// Gets the ICustomerEventsOperations.
+        /// </summary>
+        ICustomerEventsOperations CustomerEvents { get; }
 
         /// <summary>
         /// Gets the IOperations.
         /// </summary>
         IOperations Operations { get; }
-
-        /// <summary>
-        /// Gets the file upload URL of a Test Base Account.
-        /// </summary>
-        /// <param name='resourceGroupName'>
-        /// The name of the resource group that contains the resource.
-        /// </param>
-        /// <param name='testBaseAccountName'>
-        /// The resource name of the Test Base Account.
-        /// </param>
-        /// <param name='blobName'>
-        /// The custom file name of the uploaded blob.
-        /// </param>
-        /// <param name='customHeaders'>
-        /// The headers that will be added to request.
-        /// </param>
-        /// <param name='cancellationToken'>
-        /// The cancellation token.
-        /// </param>
-        Task<AzureOperationResponse<FileUploadURLResponse>> TestBaseAccountGetFileUploadUrlWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string blobName = default(string), Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Checks that the Test Base Package name and version is valid and is
-        /// not already in use.
-        /// </summary>
-        /// <param name='resourceGroupName'>
-        /// The name of the resource group that contains the resource.
-        /// </param>
-        /// <param name='testBaseAccountName'>
-        /// The resource name of the Test Base Account.
-        /// </param>
-        /// <param name='parameters'>
-        /// Parameters supplied to the Test Base Package CheckNameAvailability
-        /// operation.
-        /// </param>
-        /// <param name='customHeaders'>
-        /// The headers that will be added to request.
-        /// </param>
-        /// <param name='cancellationToken'>
-        /// The cancellation token.
-        /// </param>
-        Task<AzureOperationResponse<CheckNameAvailabilityResult>> CheckPackageNameAvailabilityWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, PackageCheckNameAvailabilityParameters parameters, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Gets the download URL of a package.
-        /// </summary>
-        /// <param name='resourceGroupName'>
-        /// The name of the resource group that contains the resource.
-        /// </param>
-        /// <param name='testBaseAccountName'>
-        /// The resource name of the Test Base Account.
-        /// </param>
-        /// <param name='packageName'>
-        /// The resource name of the Test Base Package.
-        /// </param>
-        /// <param name='customHeaders'>
-        /// The headers that will be added to request.
-        /// </param>
-        /// <param name='cancellationToken'>
-        /// The cancellation token.
-        /// </param>
-        Task<AzureOperationResponse<DownloadURLResponse>> PackageGetDownloadURLWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Gets the download URL or the test result.
-        /// </summary>
-        /// <param name='resourceGroupName'>
-        /// The name of the resource group that contains the resource.
-        /// </param>
-        /// <param name='testBaseAccountName'>
-        /// The resource name of the Test Base Account.
-        /// </param>
-        /// <param name='packageName'>
-        /// The resource name of the Test Base Package.
-        /// </param>
-        /// <param name='testResultName'>
-        /// The Test Result Name. It equals to {osName}-{TestResultId} string.
-        /// </param>
-        /// <param name='customHeaders'>
-        /// The headers that will be added to request.
-        /// </param>
-        /// <param name='cancellationToken'>
-        /// The cancellation token.
-        /// </param>
-        Task<AzureOperationResponse<DownloadURLResponse>> TestResultGetDownloadURLWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// Gets the download URL of the test execution screen recording.
-        /// </summary>
-        /// <param name='resourceGroupName'>
-        /// The name of the resource group that contains the resource.
-        /// </param>
-        /// <param name='testBaseAccountName'>
-        /// The resource name of the Test Base Account.
-        /// </param>
-        /// <param name='packageName'>
-        /// The resource name of the Test Base Package.
-        /// </param>
-        /// <param name='testResultName'>
-        /// The Test Result Name. It equals to {osName}-{TestResultId} string.
-        /// </param>
-        /// <param name='customHeaders'>
-        /// The headers that will be added to request.
-        /// </param>
-        /// <param name='cancellationToken'>
-        /// The cancellation token.
-        /// </param>
-        Task<AzureOperationResponse<DownloadURLResponse>> TestResultGetVideoDownloadURLWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
 
     }
 }

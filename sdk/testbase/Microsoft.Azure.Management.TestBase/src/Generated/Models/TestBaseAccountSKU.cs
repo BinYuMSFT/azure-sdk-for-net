@@ -33,21 +33,25 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         /// <param name="name">The name of the SKU. This is typically a letter
         /// + number code, such as B0 or S0.</param>
-        /// <param name="tier">The tier of this particular SKU. Possible values
-        /// include: 'Basic', 'Standard'</param>
         /// <param name="resourceType">The type of resource the SKU applies
         /// to.</param>
         /// <param name="capabilities">The capabilities of a SKU.</param>
         /// <param name="locations">The locations that the SKU is
         /// available.</param>
-        public TestBaseAccountSKU(string name, string tier, string resourceType = default(string), IList<TestBaseAccountSKUCapability> capabilities = default(IList<TestBaseAccountSKUCapability>), IList<string> locations = default(IList<string>))
+        public TestBaseAccountSKU(string name, string resourceType = default(string), IList<TestBaseAccountSKUCapability> capabilities = default(IList<TestBaseAccountSKUCapability>), IList<string> locations = default(IList<string>))
         {
             ResourceType = resourceType;
             Name = name;
-            Tier = tier;
             Capabilities = capabilities;
             Locations = locations;
             CustomInit();
+        }
+        /// <summary>
+        /// Static constructor for TestBaseAccountSKU class.
+        /// </summary>
+        static TestBaseAccountSKU()
+        {
+            Tier = "Standard";
         }
 
         /// <summary>
@@ -69,13 +73,6 @@ namespace Microsoft.TestBase.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or sets the tier of this particular SKU. Possible values
-        /// include: 'Basic', 'Standard'
-        /// </summary>
-        [JsonProperty(PropertyName = "tier")]
-        public string Tier { get; set; }
-
-        /// <summary>
         /// Gets the capabilities of a SKU.
         /// </summary>
         [JsonProperty(PropertyName = "capabilities")]
@@ -86,6 +83,12 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "locations")]
         public IList<string> Locations { get; set; }
+
+        /// <summary>
+        /// The tier of this particular SKU.
+        /// </summary>
+        [JsonProperty(PropertyName = "tier")]
+        public static string Tier { get; private set; }
 
     }
 }

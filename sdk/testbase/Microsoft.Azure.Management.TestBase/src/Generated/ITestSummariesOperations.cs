@@ -50,6 +50,35 @@ namespace Microsoft.TestBase
         /// </exception>
         Task<AzureOperationResponse<IPage<TestSummaryResource>>> ListWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
+        /// Gets a Test Summary with specific name from all the Test Summaries
+        /// of all the packages under a Test Base Account.
+        /// </summary>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='testSummaryName'>
+        /// The name of the Test Summary.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.SerializationException">
+        /// Thrown when unable to deserialize the response
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse<TestSummaryResource>> GetWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string testSummaryName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
         /// Lists the Test Summaries of all the packages under a Test Base
         /// Account.
         /// </summary>

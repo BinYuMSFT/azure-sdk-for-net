@@ -48,5 +48,11 @@
   <ItemGroup>
     <Folder Include="SessionRecords\" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Resources\test.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

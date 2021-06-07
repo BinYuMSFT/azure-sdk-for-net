@@ -43,7 +43,8 @@ namespace Microsoft.TestBase
         /// <param name='analysisResultType'>
         /// The type of the Analysis Result of a Test Result. Possible values
         /// include: 'ScriptExecution', 'Reliability', 'MemoryUtilization',
-        /// 'CPUUtilization', 'MemoryRegression', 'CPURegression'
+        /// 'CPUUtilization', 'MemoryRegression', 'CPURegression',
+        /// 'TestAnalysis'
         /// </param>
         /// <param name='customHeaders'>
         /// The headers that will be added to request.
@@ -61,5 +62,42 @@ namespace Microsoft.TestBase
         /// Thrown when a required parameter is null
         /// </exception>
         Task<AzureOperationResponse<IEnumerable<AnalysisResultSingletonResource>>> ListWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Gets an Analysis Result of a Test Result by name.
+        /// </summary>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='packageName'>
+        /// The resource name of the Test Base Package.
+        /// </param>
+        /// <param name='testResultName'>
+        /// The Test Result Name. It equals to {osName}-{TestResultId} string.
+        /// </param>
+        /// <param name='analysisResultName'>
+        /// The name of the Analysis Result of a Test Result. Possible values
+        /// include: 'scriptExecution', 'reliability', 'memoryUtilization',
+        /// 'cpuUtilization', 'memoryRegression', 'cpuRegression',
+        /// 'testAnalysis'
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.SerializationException">
+        /// Thrown when unable to deserialize the response
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse<AnalysisResultSingletonResource>> GetWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

@@ -44,10 +44,15 @@ namespace Microsoft.TestBase.Models
         /// Possible values include: 'None', 'InProgress', 'Processing',
         /// 'Completed', 'NotExecuted', 'Incomplete', 'Failed',
         /// 'Succeeded'</param>
+        /// <param name="testStatus">The status of the test. Possible values
+        /// include: 'None', 'TestExecutionInProgress', 'DataProcessing',
+        /// 'TestFailure', 'UpdateFailure', 'TestAndUpdateFailure',
+        /// 'InfrastructureFailure', 'Completed'</param>
         /// <param name="grade">The grade of the test. Possible values include:
         /// 'None', 'NotAvailable', 'Pass', 'Fail'</param>
         /// <param name="testRunTime">The run time of the test.</param>
-        public OSUpdateTestSummary(string osName = default(string), string releaseName = default(string), string buildVersion = default(string), string buildRevision = default(string), System.DateTime? releaseVersionDate = default(System.DateTime?), string flightingRing = default(string), string executionStatus = default(string), string grade = default(string), string testRunTime = default(string))
+        /// <param name="testType">The test type of the package</param>
+        public OSUpdateTestSummary(string osName = default(string), string releaseName = default(string), string buildVersion = default(string), string buildRevision = default(string), System.DateTime? releaseVersionDate = default(System.DateTime?), string flightingRing = default(string), string executionStatus = default(string), string testStatus = default(string), string grade = default(string), string testRunTime = default(string), string testType = default(string))
         {
             OsName = osName;
             ReleaseName = releaseName;
@@ -56,8 +61,10 @@ namespace Microsoft.TestBase.Models
             ReleaseVersionDate = releaseVersionDate;
             FlightingRing = flightingRing;
             ExecutionStatus = executionStatus;
+            TestStatus = testStatus;
             Grade = grade;
             TestRunTime = testRunTime;
+            TestType = testType;
             CustomInit();
         }
 
@@ -112,6 +119,15 @@ namespace Microsoft.TestBase.Models
         public string ExecutionStatus { get; set; }
 
         /// <summary>
+        /// Gets or sets the status of the test. Possible values include:
+        /// 'None', 'TestExecutionInProgress', 'DataProcessing', 'TestFailure',
+        /// 'UpdateFailure', 'TestAndUpdateFailure', 'InfrastructureFailure',
+        /// 'Completed'
+        /// </summary>
+        [JsonProperty(PropertyName = "testStatus")]
+        public string TestStatus { get; set; }
+
+        /// <summary>
         /// Gets or sets the grade of the test. Possible values include:
         /// 'None', 'NotAvailable', 'Pass', 'Fail'
         /// </summary>
@@ -123,6 +139,12 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "testRunTime")]
         public string TestRunTime { get; set; }
+
+        /// <summary>
+        /// Gets or sets the test type of the package
+        /// </summary>
+        [JsonProperty(PropertyName = "testType")]
+        public string TestType { get; set; }
 
     }
 }

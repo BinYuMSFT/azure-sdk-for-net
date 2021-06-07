@@ -13,8 +13,6 @@ namespace Microsoft.TestBase.Models
     using Microsoft.Rest;
     using Microsoft.Rest.Serialization;
     using Newtonsoft.Json;
-    using System.Collections;
-    using System.Collections.Generic;
     using System.Linq;
 
     /// <summary>
@@ -43,29 +41,11 @@ namespace Microsoft.TestBase.Models
         /// resource</param>
         /// <param name="grade">The grade of the test. Possible values include:
         /// 'None', 'NotAvailable', 'Pass', 'Fail'</param>
-        /// <param name="scriptExecutionResults">Properties when
-        /// analysisResultType is ScriptExecution.</param>
-        /// <param name="reliabilityResults">Properties when analysisResultType
-        /// is Reliability.</param>
-        /// <param name="cpuUtilizationResults">Properties when
-        /// analysisResultType is CPUUtilization.</param>
-        /// <param name="memoryUtilizationResults">Properties when
-        /// analysisResultType is MemoryUtilization.</param>
-        /// <param name="cpuRegressionResults">Properties when
-        /// analysisResultType is CPURegression.</param>
-        /// <param name="memoryRegressionResults">Properties when
-        /// analysisResultType is MemoryRegression.</param>
-        public AnalysisResultSingletonResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string grade = default(string), IList<ScriptExecutionResult> scriptExecutionResults = default(IList<ScriptExecutionResult>), IList<ReliabilityResult> reliabilityResults = default(IList<ReliabilityResult>), IList<UtilizationResult> cpuUtilizationResults = default(IList<UtilizationResult>), IList<UtilizationResult> memoryUtilizationResults = default(IList<UtilizationResult>), IList<RegressionResult> cpuRegressionResults = default(IList<RegressionResult>), IList<RegressionResult> memoryRegressionResults = default(IList<RegressionResult>))
+        public AnalysisResultSingletonResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string grade = default(string))
             : base(id, name, type)
         {
             SystemData = systemData;
             Grade = grade;
-            ScriptExecutionResults = scriptExecutionResults;
-            ReliabilityResults = reliabilityResults;
-            CpuUtilizationResults = cpuUtilizationResults;
-            MemoryUtilizationResults = memoryUtilizationResults;
-            CpuRegressionResults = cpuRegressionResults;
-            MemoryRegressionResults = memoryRegressionResults;
             CustomInit();
         }
 
@@ -86,44 +66,6 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.grade")]
         public string Grade { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is ScriptExecution.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.scriptExecutionResults")]
-        public IList<ScriptExecutionResult> ScriptExecutionResults { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is Reliability.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.reliabilityResults")]
-        public IList<ReliabilityResult> ReliabilityResults { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is CPUUtilization.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.cpuUtilizationResults")]
-        public IList<UtilizationResult> CpuUtilizationResults { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is
-        /// MemoryUtilization.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.memoryUtilizationResults")]
-        public IList<UtilizationResult> MemoryUtilizationResults { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is CPURegression.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.cpuRegressionResults")]
-        public IList<RegressionResult> CpuRegressionResults { get; set; }
-
-        /// <summary>
-        /// Gets or sets properties when analysisResultType is
-        /// MemoryRegression.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.memoryRegressionResults")]
-        public IList<RegressionResult> MemoryRegressionResults { get; set; }
 
     }
 }

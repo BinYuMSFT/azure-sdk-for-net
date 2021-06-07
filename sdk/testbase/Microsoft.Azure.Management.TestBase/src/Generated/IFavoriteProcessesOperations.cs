@@ -52,6 +52,108 @@ namespace Microsoft.TestBase
         /// </exception>
         Task<AzureOperationResponse<IPage<FavoriteProcessResource>>> ListWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
+        /// Create or replace a favorite process for a Test Base Package.
+        /// </summary>
+        /// <param name='parameters'>
+        /// Parameters supplied to create a favorite process in a package.
+        /// </param>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='packageName'>
+        /// The resource name of the Test Base Package.
+        /// </param>
+        /// <param name='favoriteProcessResourceName'>
+        /// The resource name of a favorite process in a package. If the
+        /// process name contains characters that are not allowed in Azure
+        /// Resource Name, we use 'actualProcessName' in request body to submit
+        /// the name.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.SerializationException">
+        /// Thrown when unable to deserialize the response
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse<FavoriteProcessResource>> CreateWithHttpMessagesAsync(FavoriteProcessResource parameters, string resourceGroupName, string testBaseAccountName, string packageName, string favoriteProcessResourceName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Deletes a favorite process for a specific package.
+        /// </summary>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='packageName'>
+        /// The resource name of the Test Base Package.
+        /// </param>
+        /// <param name='favoriteProcessResourceName'>
+        /// The resource name of a favorite process in a package. If the
+        /// process name contains characters that are not allowed in Azure
+        /// Resource Name, we use 'actualProcessName' in request body to submit
+        /// the name.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse> DeleteWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string favoriteProcessResourceName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Gets a favorite process for a Test Base Package.
+        /// </summary>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='packageName'>
+        /// The resource name of the Test Base Package.
+        /// </param>
+        /// <param name='favoriteProcessResourceName'>
+        /// The resource name of a favorite process in a package. If the
+        /// process name contains characters that are not allowed in Azure
+        /// Resource Name, we use 'actualProcessName' in request body to submit
+        /// the name.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.SerializationException">
+        /// Thrown when unable to deserialize the response
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse<FavoriteProcessResource>> GetWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string favoriteProcessResourceName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
         /// Lists the favorite processes for a specific package.
         /// </summary>
         /// <param name='nextPageLink'>

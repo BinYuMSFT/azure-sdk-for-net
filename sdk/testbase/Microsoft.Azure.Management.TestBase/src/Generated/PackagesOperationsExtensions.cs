@@ -62,6 +62,494 @@ namespace Microsoft.TestBase
             }
 
             /// <summary>
+            /// Create or replace (overwrite/recreate, with potential downtime) a Test Base
+            /// Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to create a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackageResource Create(this IPackagesOperations operations, PackageResource parameters, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.CreateAsync(parameters, resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Create or replace (overwrite/recreate, with potential downtime) a Test Base
+            /// Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to create a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackageResource> CreateAsync(this IPackagesOperations operations, PackageResource parameters, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.CreateWithHttpMessagesAsync(parameters, resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Update an existing Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to update a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackageResource Update(this IPackagesOperations operations, PackageUpdateParameters parameters, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.UpdateAsync(parameters, resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Update an existing Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to update a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackageResource> UpdateAsync(this IPackagesOperations operations, PackageUpdateParameters parameters, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.UpdateWithHttpMessagesAsync(parameters, resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Deletes a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackagesDeleteHeaders Delete(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.DeleteAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Deletes a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackagesDeleteHeaders> DeleteAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.DeleteWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Headers;
+                }
+            }
+
+            /// <summary>
+            /// Gets a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackageResource Get(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.GetAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackageResource> GetAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Hard Delete a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackagesHardDeleteHeaders HardDelete(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.HardDeleteAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Hard Delete a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackagesHardDeleteHeaders> HardDeleteAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.HardDeleteWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Headers;
+                }
+            }
+
+            /// <summary>
+            /// Gets the download URL of a package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static DownloadURLResponse GetDownloadURL(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.GetDownloadURLAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets the download URL of a package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<DownloadURLResponse> GetDownloadURLAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetDownloadURLWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Create or replace (overwrite/recreate, with potential downtime) a Test Base
+            /// Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to create a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackageResource BeginCreate(this IPackagesOperations operations, PackageResource parameters, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.BeginCreateAsync(parameters, resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Create or replace (overwrite/recreate, with potential downtime) a Test Base
+            /// Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to create a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackageResource> BeginCreateAsync(this IPackagesOperations operations, PackageResource parameters, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.BeginCreateWithHttpMessagesAsync(parameters, resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Update an existing Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to update a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackageResource BeginUpdate(this IPackagesOperations operations, PackageUpdateParameters parameters, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.BeginUpdateAsync(parameters, resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Update an existing Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='parameters'>
+            /// Parameters supplied to update a Test Base Package.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackageResource> BeginUpdateAsync(this IPackagesOperations operations, PackageUpdateParameters parameters, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.BeginUpdateWithHttpMessagesAsync(parameters, resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Deletes a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackagesDeleteHeaders BeginDelete(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.BeginDeleteAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Deletes a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackagesDeleteHeaders> BeginDeleteAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.BeginDeleteWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Headers;
+                }
+            }
+
+            /// <summary>
+            /// Hard Delete a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            public static PackagesHardDeleteHeaders BeginHardDelete(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName)
+            {
+                return operations.BeginHardDeleteAsync(resourceGroupName, testBaseAccountName, packageName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Hard Delete a Test Base Package.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<PackagesHardDeleteHeaders> BeginHardDeleteAsync(this IPackagesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.BeginHardDeleteWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Headers;
+                }
+            }
+
+            /// <summary>
             /// Lists all the packages under a Test Base Account.
             /// </summary>
             /// <param name='operations'>

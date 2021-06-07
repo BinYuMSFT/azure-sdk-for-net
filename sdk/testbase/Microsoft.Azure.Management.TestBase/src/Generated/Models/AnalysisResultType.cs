@@ -22,5 +22,6 @@ namespace Microsoft.TestBase.Models
         public const string CPUUtilization = "CPUUtilization";
         public const string MemoryRegression = "MemoryRegression";
         public const string CPURegression = "CPURegression";
+        public const string TestAnalysis = "TestAnalysis";
     }
 }

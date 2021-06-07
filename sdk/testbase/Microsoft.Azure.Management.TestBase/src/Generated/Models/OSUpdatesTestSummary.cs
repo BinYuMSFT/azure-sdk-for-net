@@ -34,14 +34,19 @@ namespace Microsoft.TestBase.Models
         /// <param name="executionStatus">The status of the last test. Possible
         /// values include: 'None', 'InProgress', 'Processing', 'Completed',
         /// 'NotExecuted', 'Incomplete', 'Failed', 'Succeeded'</param>
+        /// <param name="testStatus">The status of last test. Possible values
+        /// include: 'None', 'TestExecutionInProgress', 'DataProcessing',
+        /// 'TestFailure', 'UpdateFailure', 'TestAndUpdateFailure',
+        /// 'InfrastructureFailure', 'Completed'</param>
         /// <param name="grade">The grade of last test. Possible values
         /// include: 'None', 'NotAvailable', 'Pass', 'Fail'</param>
         /// <param name="testRunTime">The run time of the last test.</param>
         /// <param name="osUpdateTestSummaries">Detailed summary for each OS
         /// update</param>
-        public OSUpdatesTestSummary(string executionStatus = default(string), string grade = default(string), string testRunTime = default(string), IList<OSUpdateTestSummary> osUpdateTestSummaries = default(IList<OSUpdateTestSummary>))
+        public OSUpdatesTestSummary(string executionStatus = default(string), string testStatus = default(string), string grade = default(string), string testRunTime = default(string), IList<OSUpdateTestSummary> osUpdateTestSummaries = default(IList<OSUpdateTestSummary>))
         {
             ExecutionStatus = executionStatus;
+            TestStatus = testStatus;
             Grade = grade;
             TestRunTime = testRunTime;
             OsUpdateTestSummaries = osUpdateTestSummaries;
@@ -60,6 +65,15 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "executionStatus")]
         public string ExecutionStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status of last test. Possible values include:
+        /// 'None', 'TestExecutionInProgress', 'DataProcessing', 'TestFailure',
+        /// 'UpdateFailure', 'TestAndUpdateFailure', 'InfrastructureFailure',
+        /// 'Completed'
+        /// </summary>
+        [JsonProperty(PropertyName = "testStatus")]
+        public string TestStatus { get; set; }
 
         /// <summary>
         /// Gets or sets the grade of last test. Possible values include:

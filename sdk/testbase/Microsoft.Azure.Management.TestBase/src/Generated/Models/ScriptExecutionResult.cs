@@ -33,15 +33,15 @@ namespace Microsoft.TestBase.Models
         /// <param name="startTime">Start time of script execution.</param>
         /// <param name="endTime">End time of script execution.</param>
         /// <param name="exitCode">Exit code.</param>
-        /// <param name="timeOut">Whether the subscription execution is
-        /// timeout.</param>
-        public ScriptExecutionResult(string scriptName = default(string), System.DateTime? startTime = default(System.DateTime?), System.DateTime? endTime = default(System.DateTime?), int? exitCode = default(int?), bool? timeOut = default(bool?))
+        /// <param name="timedOut">Whether the script execution is timed
+        /// out.</param>
+        public ScriptExecutionResult(string scriptName = default(string), System.DateTime? startTime = default(System.DateTime?), System.DateTime? endTime = default(System.DateTime?), int? exitCode = default(int?), bool? timedOut = default(bool?))
         {
             ScriptName = scriptName;
             StartTime = startTime;
             EndTime = endTime;
             ExitCode = exitCode;
-            TimeOut = timeOut;
+            TimedOut = timedOut;
             CustomInit();
         }
 
@@ -75,10 +75,10 @@ namespace Microsoft.TestBase.Models
         public int? ExitCode { get; set; }
 
         /// <summary>
-        /// Gets or sets whether the subscription execution is timeout.
+        /// Gets or sets whether the script execution is timed out.
         /// </summary>
-        [JsonProperty(PropertyName = "timeOut")]
-        public bool? TimeOut { get; set; }
+        [JsonProperty(PropertyName = "timedOut")]
+        public bool? TimedOut { get; set; }
 
     }
 }

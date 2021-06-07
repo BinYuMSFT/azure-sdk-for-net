@@ -24,7 +24,7 @@ namespace Microsoft.TestBase
     public partial interface IOSUpdatesOperations
     {
         /// <summary>
-        /// Lists the OS Updates which were tested on this package before.
+        /// Lists the OS Updates in which the package were tested before.
         /// </summary>
         /// <param name='resourceGroupName'>
         /// The name of the resource group that contains the resource.
@@ -56,7 +56,38 @@ namespace Microsoft.TestBase
         /// </exception>
         Task<AzureOperationResponse<IPage<OSUpdateResource>>> ListWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string osUpdateType, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
-        /// Lists the OS Updates which were tested on this package before.
+        /// Gets an OS Update by name in which the package was tested before.
+        /// </summary>
+        /// <param name='resourceGroupName'>
+        /// The name of the resource group that contains the resource.
+        /// </param>
+        /// <param name='testBaseAccountName'>
+        /// The resource name of the Test Base Account.
+        /// </param>
+        /// <param name='packageName'>
+        /// The resource name of the Test Base Package.
+        /// </param>
+        /// <param name='osUpdateResourceName'>
+        /// The resource name of an OS Update.
+        /// </param>
+        /// <param name='customHeaders'>
+        /// The headers that will be added to request.
+        /// </param>
+        /// <param name='cancellationToken'>
+        /// The cancellation token.
+        /// </param>
+        /// <exception cref="ErrorResponseException">
+        /// Thrown when the operation returned an invalid status code
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.SerializationException">
+        /// Thrown when unable to deserialize the response
+        /// </exception>
+        /// <exception cref="Microsoft.Rest.ValidationException">
+        /// Thrown when a required parameter is null
+        /// </exception>
+        Task<AzureOperationResponse<OSUpdateResource>> GetWithHttpMessagesAsync(string resourceGroupName, string testBaseAccountName, string packageName, string osUpdateResourceName, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        /// <summary>
+        /// Lists the OS Updates in which the package were tested before.
         /// </summary>
         /// <param name='nextPageLink'>
         /// The NextLink from the previous successful call to List operation.

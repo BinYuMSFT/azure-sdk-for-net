@@ -46,7 +46,7 @@ namespace Microsoft.TestBase
             /// <param name='analysisResultType'>
             /// The type of the Analysis Result of a Test Result. Possible values include:
             /// 'ScriptExecution', 'Reliability', 'MemoryUtilization', 'CPUUtilization',
-            /// 'MemoryRegression', 'CPURegression'
+            /// 'MemoryRegression', 'CPURegression', 'TestAnalysis'
             /// </param>
             public static IEnumerable<AnalysisResultSingletonResource> List(this IAnalysisResultsOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultType)
             {
@@ -76,7 +76,7 @@ namespace Microsoft.TestBase
             /// <param name='analysisResultType'>
             /// The type of the Analysis Result of a Test Result. Possible values include:
             /// 'ScriptExecution', 'Reliability', 'MemoryUtilization', 'CPUUtilization',
-            /// 'MemoryRegression', 'CPURegression'
+            /// 'MemoryRegression', 'CPURegression', 'TestAnalysis'
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -84,6 +84,68 @@ namespace Microsoft.TestBase
             public static async Task<IEnumerable<AnalysisResultSingletonResource>> ListAsync(this IAnalysisResultsOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultType, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, testResultName, analysisResultType, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Gets an Analysis Result of a Test Result by name.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='testResultName'>
+            /// The Test Result Name. It equals to {osName}-{TestResultId} string.
+            /// </param>
+            /// <param name='analysisResultName'>
+            /// The name of the Analysis Result of a Test Result. Possible values include:
+            /// 'scriptExecution', 'reliability', 'memoryUtilization', 'cpuUtilization',
+            /// 'memoryRegression', 'cpuRegression', 'testAnalysis'
+            /// </param>
+            public static AnalysisResultSingletonResource Get(this IAnalysisResultsOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultName)
+            {
+                return operations.GetAsync(resourceGroupName, testBaseAccountName, packageName, testResultName, analysisResultName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets an Analysis Result of a Test Result by name.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='testResultName'>
+            /// The Test Result Name. It equals to {osName}-{TestResultId} string.
+            /// </param>
+            /// <param name='analysisResultName'>
+            /// The name of the Analysis Result of a Test Result. Possible values include:
+            /// 'scriptExecution', 'reliability', 'memoryUtilization', 'cpuUtilization',
+            /// 'memoryRegression', 'cpuRegression', 'testAnalysis'
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<AnalysisResultSingletonResource> GetAsync(this IAnalysisResultsOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string testResultName, string analysisResultName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, testResultName, analysisResultName, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }

@@ -46,6 +46,10 @@ namespace Microsoft.TestBase.Models
         /// Possible values include: 'None', 'InProgress', 'Processing',
         /// 'Completed', 'NotExecuted', 'Incomplete', 'Failed',
         /// 'Succeeded'</param>
+        /// <param name="testStatus">The status of last test. Possible values
+        /// include: 'None', 'TestExecutionInProgress', 'DataProcessing',
+        /// 'TestFailure', 'UpdateFailure', 'TestAndUpdateFailure',
+        /// 'InfrastructureFailure', 'Completed'</param>
         /// <param name="grade">The grade of the test. Possible values include:
         /// 'None', 'NotAvailable', 'Pass', 'Fail'</param>
         /// <param name="testRunTime">The run time of the last test.</param>
@@ -53,7 +57,7 @@ namespace Microsoft.TestBase.Models
         /// triggered by feature updates</param>
         /// <param name="securityUpdatesTestSummary">The result summary of
         /// tests triggered by security updates</param>
-        public TestSummaryResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string testSummaryId = default(string), string packageId = default(string), string applicationName = default(string), string applicationVersion = default(string), string executionStatus = default(string), string grade = default(string), string testRunTime = default(string), OSUpdatesTestSummary featureUpdatesTestSummary = default(OSUpdatesTestSummary), OSUpdatesTestSummary securityUpdatesTestSummary = default(OSUpdatesTestSummary))
+        public TestSummaryResource(string id = default(string), string name = default(string), string type = default(string), SystemData systemData = default(SystemData), string testSummaryId = default(string), string packageId = default(string), string applicationName = default(string), string applicationVersion = default(string), string executionStatus = default(string), string testStatus = default(string), string grade = default(string), string testRunTime = default(string), OSUpdatesTestSummary featureUpdatesTestSummary = default(OSUpdatesTestSummary), OSUpdatesTestSummary securityUpdatesTestSummary = default(OSUpdatesTestSummary))
             : base(id, name, type)
         {
             SystemData = systemData;
@@ -62,6 +66,7 @@ namespace Microsoft.TestBase.Models
             ApplicationName = applicationName;
             ApplicationVersion = applicationVersion;
             ExecutionStatus = executionStatus;
+            TestStatus = testStatus;
             Grade = grade;
             TestRunTime = testRunTime;
             FeatureUpdatesTestSummary = featureUpdatesTestSummary;
@@ -111,6 +116,15 @@ namespace Microsoft.TestBase.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.executionStatus")]
         public string ExecutionStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status of last test. Possible values include:
+        /// 'None', 'TestExecutionInProgress', 'DataProcessing', 'TestFailure',
+        /// 'UpdateFailure', 'TestAndUpdateFailure', 'InfrastructureFailure',
+        /// 'Completed'
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.testStatus")]
+        public string TestStatus { get; set; }
 
         /// <summary>
         /// Gets or sets the grade of the test. Possible values include:

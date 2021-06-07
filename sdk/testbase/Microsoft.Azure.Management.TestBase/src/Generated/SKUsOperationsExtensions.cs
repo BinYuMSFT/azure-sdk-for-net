@@ -17,9 +17,9 @@ namespace Microsoft.TestBase
     using System.Threading.Tasks;
 
     /// <summary>
-    /// Extension methods for SKUsOperations.
+    /// Extension methods for SkusOperations.
     /// </summary>
-    public static partial class SKUsOperationsExtensions
+    public static partial class SkusOperationsExtensions
     {
             /// <summary>
             /// Lists the available SKUs of Test Base Account in a subscription.
@@ -27,7 +27,7 @@ namespace Microsoft.TestBase
             /// <param name='operations'>
             /// The operations group for this extension method.
             /// </param>
-            public static IPage<TestBaseAccountSKU> List(this ISKUsOperations operations)
+            public static IPage<TestBaseAccountSKU> List(this ISkusOperations operations)
             {
                 return operations.ListAsync().GetAwaiter().GetResult();
             }
@@ -41,7 +41,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IPage<TestBaseAccountSKU>> ListAsync(this ISKUsOperations operations, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IPage<TestBaseAccountSKU>> ListAsync(this ISkusOperations operations, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListWithHttpMessagesAsync(null, cancellationToken).ConfigureAwait(false))
                 {
@@ -58,7 +58,7 @@ namespace Microsoft.TestBase
             /// <param name='nextPageLink'>
             /// The NextLink from the previous successful call to List operation.
             /// </param>
-            public static IPage<TestBaseAccountSKU> ListNext(this ISKUsOperations operations, string nextPageLink)
+            public static IPage<TestBaseAccountSKU> ListNext(this ISkusOperations operations, string nextPageLink)
             {
                 return operations.ListNextAsync(nextPageLink).GetAwaiter().GetResult();
             }
@@ -75,7 +75,7 @@ namespace Microsoft.TestBase
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IPage<TestBaseAccountSKU>> ListNextAsync(this ISKUsOperations operations, string nextPageLink, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IPage<TestBaseAccountSKU>> ListNextAsync(this ISkusOperations operations, string nextPageLink, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListNextWithHttpMessagesAsync(nextPageLink, null, cancellationToken).ConfigureAwait(false))
                 {

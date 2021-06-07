@@ -22,7 +22,7 @@ namespace Microsoft.TestBase
     public static partial class OSUpdatesOperationsExtensions
     {
             /// <summary>
-            /// Lists the OS Updates which were tested on this package before.
+            /// Lists the OS Updates in which the package were tested before.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -46,7 +46,7 @@ namespace Microsoft.TestBase
             }
 
             /// <summary>
-            /// Lists the OS Updates which were tested on this package before.
+            /// Lists the OS Updates in which the package were tested before.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -76,7 +76,59 @@ namespace Microsoft.TestBase
             }
 
             /// <summary>
-            /// Lists the OS Updates which were tested on this package before.
+            /// Gets an OS Update by name in which the package was tested before.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='osUpdateResourceName'>
+            /// The resource name of an OS Update.
+            /// </param>
+            public static OSUpdateResource Get(this IOSUpdatesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string osUpdateResourceName)
+            {
+                return operations.GetAsync(resourceGroupName, testBaseAccountName, packageName, osUpdateResourceName).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets an OS Update by name in which the package was tested before.
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='resourceGroupName'>
+            /// The name of the resource group that contains the resource.
+            /// </param>
+            /// <param name='testBaseAccountName'>
+            /// The resource name of the Test Base Account.
+            /// </param>
+            /// <param name='packageName'>
+            /// The resource name of the Test Base Package.
+            /// </param>
+            /// <param name='osUpdateResourceName'>
+            /// The resource name of an OS Update.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<OSUpdateResource> GetAsync(this IOSUpdatesOperations operations, string resourceGroupName, string testBaseAccountName, string packageName, string osUpdateResourceName, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.GetWithHttpMessagesAsync(resourceGroupName, testBaseAccountName, packageName, osUpdateResourceName, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Lists the OS Updates in which the package were tested before.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
@@ -90,7 +142,7 @@ namespace Microsoft.TestBase
             }
 
             /// <summary>
-            /// Lists the OS Updates which were tested on this package before.
+            /// Lists the OS Updates in which the package were tested before.
             /// </summary>
             /// <param name='operations'>
             /// The operations group for this extension method.
