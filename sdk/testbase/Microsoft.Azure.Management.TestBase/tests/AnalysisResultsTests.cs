@@ -25,7 +25,7 @@ namespace TestBase.Tests
                 {
                     try
                     {
-                        var result = t_TestBaseClient.AnalysisResults.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, testResultName, anaResultType).GetAwaiter().GetResult();
+                        var result = t_TestBaseClient.AnalysisResults.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, testResultName, anaResultType).GetAwaiter().GetResult();
                         Assert.NotNull(result);
                         Assert.NotNull(result.Body);
                     }
@@ -39,7 +39,7 @@ namespace TestBase.Tests
                 {
                     try
                     {
-                        var result = t_TestBaseClient.AnalysisResults.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, testResultName, anaResultType).GetAwaiter().GetResult();
+                        var result = t_TestBaseClient.AnalysisResults.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, testResultName, anaResultType).GetAwaiter().GetResult();
                         Assert.NotNull(result);
                         Assert.NotNull(result.Body);
                     }

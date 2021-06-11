@@ -23,14 +23,9 @@ namespace TestBase.Tests
         protected string t_TestBaseAccountName= "testBaseAccount_kaifa";
         /// <summary>
         /// package name + "-" + Version , e.g. package1-1.0.0
-        /// For List/Get/Create/Update/Delete methods
         /// </summary>
-        protected string t_PackageNameVer = "package2_kaifa-1.0";//Package name + "-" + Version
-        /// <summary>
-        /// package name , e.g. package1
-        /// 
-        /// </summary>
-        protected string t_PackageName = "package2_kaifa";
+        protected string t_PackageName = "package2_kaifa-1.0";//Package name + "-" + Version
+        protected string t_CustomerEventName = "testbase6336_event";
 
         protected TestBaseClient t_TestBaseClient;
         protected ResourceManagementClient t_ResourceClient;
@@ -69,12 +64,12 @@ namespace TestBase.Tests
         }
 
         /// <summary>
-        /// The type of the OS Update
+        /// The type of the OS Update SecurityUpdate/FeatureUpdate.
         /// </summary>
         protected class OsUpdateType
         {
-            public static string SecurityUpdate = "Security updates";
-            public static string FeatureUpdate = "Feature updates";
+            public static string SecurityUpdate = "SecurityUpdate";
+            public static string FeatureUpdate = "FeatureUpdate";
         }
 
         /// <summary>

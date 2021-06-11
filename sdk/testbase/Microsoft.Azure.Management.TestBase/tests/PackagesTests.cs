@@ -19,8 +19,11 @@ namespace TestBase.Tests
         string version = "1.0.0";
         string nextPageLink = null;
         string uploadUrl = "";
-        string blobPath = "";
-        
+        string blobPath = "https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/staging/dbf7c815-da6b-45e7-9114-137eae16831b/7afedd46-74c0-4642-9562-f02987871c9c/1/test.zip";
+
+        string FeatureUpdate = "Feature updates";
+        string SecurityUpdate = "Security updates";
+
 
         [Fact]
         public void TestPackageOperations()
@@ -29,7 +32,6 @@ namespace TestBase.Tests
             {
                 EnsureClientInitialized(context);
                 baseGeneratedName = TestbaseManagementTestUtilities.GenerateName(TestPrefix);
-
 
                 //var temp=t_TestBaseClient.Packages.ListByTestBaseAccountWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName).GetAwaiter().GetResult();
 
@@ -43,7 +45,7 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.Contains("NotFound", ex.Message);
+                    Assert.Null(ex.Message);
                 }
 
                 Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.Packages.ListByTestBaseAccountNextWithHttpMessagesAsync(nextPageLink));
@@ -54,14 +56,14 @@ namespace TestBase.Tests
                 //Gets the Package uploaded via the Web page
                 try
                 {
-                    var packageResponse = t_TestBaseClient.Packages.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer).GetAwaiter().GetResult();
+                    var packageResponse = t_TestBaseClient.Packages.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName).GetAwaiter().GetResult();
                     Assert.NotNull(packageResponse);
                     Assert.NotNull(packageResponse.Body);
-                    Assert.Equal(t_PackageNameVer, packageResponse.Body.Name);
+                    Assert.Equal(t_PackageName, packageResponse.Body.Name);
                 }
                 catch (Exception ex)
                 {
-                    Assert.Contains("NotFound", ex.Message);
+                    Assert.Null(ex.Message);
                 }
 
 
@@ -80,12 +82,12 @@ namespace TestBase.Tests
                 packageResource.TargetOSList = new List<TargetOSInfo>()
                 {
                     new TargetOSInfo(
-                        OsUpdateType.FeatureUpdate,new List<string>()//The Name property of availableOS,not resourceName
+                        FeatureUpdate,new List<string>()//The Name property of availableOS,not resourceName
                         {
                             "Windows 10 20H2"
                         }),
                     new TargetOSInfo(
-                        OsUpdateType.SecurityUpdate,new List<string>()
+                        SecurityUpdate,new List<string>()
                         {
                             "Windows 10 21H1",
                             "Windows 10 20H2",
@@ -106,14 +108,13 @@ namespace TestBase.Tests
                     uploadUrl = uploadUrlResponse.Body.UploadUrl;
                     var cloudBlockBlob = new CloudBlockBlob(new Uri(uploadUrl));
                     string basePath = Microsoft.DotNet.PlatformAbstractions.ApplicationEnvironment.ApplicationBasePath;
-                    //If the file is in the project,Need to set the file properties: Copy to Output directory - Copy if newer
+
                     cloudBlockBlob.UploadFromFileAsync(basePath + "\\Resources\\test.zip").GetAwaiter().GetResult();
                     blobPath = uploadUrl.ToLower().Split(".zip")[0] + ".zip";
                 }
                 catch (Exception ex)
                 {
-                    blobPath = "https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/staging/dbf7c815-da6b-45e7-9114-137eae16831b/7afedd46-74c0-4642-9562-f02987871c9c/1/test.zip?sv=2019-07-07&sr=b&sig=NlL8T%2BVGPNqPixFOvQieMbkCJ5eXGf7nlEx%2FDvzdTkY%3D&se=2021-06-02T05%3A49%3A40Z&sp=rl";
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
                 }
                 packageResource.BlobPath = blobPath;
                 packageResource.Tests = new List<Test>()
@@ -187,7 +188,7 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
                 }
                 #endregion
 
@@ -207,7 +208,7 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
                 }
 
 
@@ -219,7 +220,7 @@ namespace TestBase.Tests
                 }
                 catch(Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.NotNull(ex.Message);//BadRequest,Unable to delete successfully, Use BeginHardDelete instead of Delete
                 }
 
                 try
@@ -230,9 +231,8 @@ namespace TestBase.Tests
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
                 }
-
             }
         }
     }

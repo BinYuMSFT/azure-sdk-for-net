@@ -27,7 +27,7 @@ namespace TestBase.Tests
 
                 try
                 {
-                    favoriteResponse = t_TestBaseClient.FavoriteProcesses.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer).GetAwaiter().GetResult();
+                    favoriteResponse = t_TestBaseClient.FavoriteProcesses.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName).GetAwaiter().GetResult();
                     Assert.NotNull(favoriteResponse);
                     Assert.NotNull(favoriteResponse.Body);
                 }
@@ -40,7 +40,7 @@ namespace TestBase.Tests
 
                 try
                 {
-                    var getResult=t_TestBaseClient.FavoriteProcesses.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, favResourceName).GetAwaiter().GetResult();
+                    var getResult=t_TestBaseClient.FavoriteProcesses.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, favResourceName).GetAwaiter().GetResult();
                     Assert.NotNull(getResult);
                     Assert.NotNull(getResult.Body);
                 }
@@ -52,11 +52,11 @@ namespace TestBase.Tests
 
                 FavoriteProcessResource parameters = new FavoriteProcessResource();
                 //parameters.ActualProcessName="Resource groups";
-                //var createResult=t_TestBaseClient.FavoriteProcess.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, favResourceName).GetAwaiter().GetResult();
+                //var createResult=t_TestBaseClient.FavoriteProcess.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, favResourceName).GetAwaiter().GetResult();
 
-                Assert.ThrowsAsync<ValidationException>(() => t_TestBaseClient.FavoriteProcesses.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, favResourceName));
+                Assert.ThrowsAsync<ValidationException>(() => t_TestBaseClient.FavoriteProcesses.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, favResourceName));
 
-                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.FavoriteProcesses.DeleteWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, favResourceName));
+                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.FavoriteProcesses.DeleteWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, favResourceName));
             }
         }
     }

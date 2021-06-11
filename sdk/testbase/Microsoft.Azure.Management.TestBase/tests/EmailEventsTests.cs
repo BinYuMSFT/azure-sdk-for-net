@@ -9,7 +9,7 @@ namespace TestBase.Tests
 {
     public class EmailEventsTests:TestbaseBase
     {
-        string emailEventResourceName = "initial-verification";
+        string emailEventResourceName = "InitialVerification";
 
         [Fact]
         public void TestEmailEvent()

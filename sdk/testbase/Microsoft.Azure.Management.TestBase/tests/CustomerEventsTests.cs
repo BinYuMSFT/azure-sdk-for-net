@@ -36,6 +36,16 @@ namespace TestBase.Tests
                     Assert.NotNull(ex.Message);
                 }
 
+                try
+                {
+                    var result = t_TestBaseClient.CustomerEvents.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_CustomerEventName).GetAwaiter().GetResult();
+                    Assert.NotNull(result);
+                }
+                catch(Exception ex)
+                {
+                    Assert.NotNull(ex.Message);
+                }
+
 
                 customerEventName = baseGeneratedName + "_event";
 
@@ -86,17 +96,17 @@ namespace TestBase.Tests
                     var result = t_TestBaseClient.CustomerEvents.CreateWithHttpMessagesAsync(parameters, t_ResourceGroupName, t_TestBaseAccountName, customerEventName).GetAwaiter().GetResult();
                     Assert.NotNull(result);
                     Assert.NotNull(result.Body);
-                    Assert.Equal(customerEventName, result.Body.Name);
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);//Long running operation failed with status 'Failed'.
+                    Assert.NotNull(ex.Message);
                 }
 
                 try
                 {
-                    //var result = t_TestBaseClient.CustomerEvent.DeleteWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, customerEventName).GetAwaiter().GetResult();
-                    //Assert.NotNull(result);
+                    //"testbase1499_event"
+                    var result = t_TestBaseClient.CustomerEvents.BeginDeleteWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, customerEventName).GetAwaiter().GetResult();
+                    Assert.NotNull(result);
                 }
                 catch (Exception ex)
                 {

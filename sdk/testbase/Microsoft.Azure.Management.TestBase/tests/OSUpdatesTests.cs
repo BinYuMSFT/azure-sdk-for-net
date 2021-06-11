@@ -4,15 +4,19 @@
 using Microsoft.Rest.ClientRuntime.Azure.TestFramework;
 using Microsoft.TestBase.Models;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace TestBase.Tests
 {
     public class OSUpdatesTests : TestbaseBase
     {
-        string nextPageLink = null;
+        /*
+         * 2021-6-11 Resolve the issue of reporting BadRequest exceptions, Because osUpdateResourceName is incorrect
+         */
 
-        string osUpdateResourceName = "Windows-10-21H1";
+        string osUpdateResourceName = "TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2";
+        List<string> lstNames = new List<string>();
 
         [Fact]
         public void TestOSUpdateOperations()
@@ -24,29 +28,53 @@ namespace TestBase.Tests
                 //Get OSUpdates List
                 try
                 {
-                    var response = t_TestBaseClient.OSUpdates.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, OsUpdateType.SecurityUpdate).GetAwaiter().GetResult();
+                    var response = t_TestBaseClient.OSUpdates.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, OsUpdateType.SecurityUpdate).GetAwaiter().GetResult();
                     Assert.NotNull(response);
                     Assert.NotNull(response.Body);
+
+                    var arr = response.Body.GetEnumerator();
+                    while (arr.MoveNext() && (arr.Current != null))
+                    {
+                        lstNames.Add(arr.Current.Name);//TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2
+                    }
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
                 }
-
-                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.OSUpdates.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, ErrorValue, OsUpdateType.SecurityUpdate));
-
-                Assert.ThrowsAsync<ErrorResponseException>(() => t_TestBaseClient.OSUpdates.ListNextWithHttpMessagesAsync(nextPageLink));
 
                 try
                 {
-                    var osUpdateResult = t_TestBaseClient.OSUpdates.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageNameVer, osUpdateResourceName).GetAwaiter().GetResult();
-                    Assert.NotNull(osUpdateResult);
-                    Assert.NotNull(osUpdateResult.Body);
-                    Assert.Equal(osUpdateResourceName, osUpdateResult.Body.OsName);
+                    var response = t_TestBaseClient.OSUpdates.ListWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, OsUpdateType.FeatureUpdate).GetAwaiter().GetResult();
+                    Assert.NotNull(response);
+                    Assert.NotNull(response.Body);
+
+                    var arr = response.Body.GetEnumerator();
+                    while (arr.MoveNext() && (arr.Current != null))
+                    {
+                        if (!lstNames.Contains(arr.Current.Name))
+                            lstNames.Add(arr.Current.Name);//0 item
+                    }
                 }
                 catch (Exception ex)
                 {
-                    Assert.NotNull(ex.Message);
+                    Assert.Null(ex.Message);
+                }
+
+                try
+                {
+                    if (lstNames.Count > 0)
+                    {
+                        osUpdateResourceName = lstNames[0];
+                        var osUpdateResult = t_TestBaseClient.OSUpdates.GetWithHttpMessagesAsync(t_ResourceGroupName, t_TestBaseAccountName, t_PackageName, osUpdateResourceName).GetAwaiter().GetResult();
+                        Assert.NotNull(osUpdateResult);
+                        Assert.NotNull(osUpdateResult.Body);
+                        Assert.Equal(osUpdateResourceName, osUpdateResult.Body.Name);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Assert.Null(ex.Message);
                 }
             }
         }

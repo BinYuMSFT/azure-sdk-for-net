@@ -1,13 +1,13 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates?osUpdateType=Security%20updates&api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL29zVXBkYXRlcz9vc1VwZGF0ZVR5cGU9U2VjdXJpdHklMjB1cGRhdGVzJmFwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates?osUpdateType=SecurityUpdate&api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL29zVXBkYXRlcz9vc1VwZGF0ZVR5cGU9U2VjdXJpdHlVcGRhdGUmYXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "0d5ba348-79fe-4123-bfc0-69c42e41cf67"
+          "2ab2156e-053e-48e6-b471-0cf4b0d0b234"
         ],
         "Accept-Language": [
           "en-US"
@@ -26,29 +26,20 @@
         "Pragma": [
           "no-cache"
         ],
-        "Set-Cookie": [
-          "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
-        ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14988"
+          "14985"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
-        "x-ms-failure-cause": [
-          "service"
-        ],
         "x-ms-request-id": [
-          "e6935324-6310-4d30-9975-5557b8a9865b"
+          "dcb7c2ae-845f-4f8f-b7d9-d0b57bd27e1a"
         ],
         "x-ms-correlation-request-id": [
-          "5004c405-b72c-4b0b-ac6c-e80a8104de68"
-        ],
-        "X-Powered-By": [
-          "ASP.NET"
+          "344338c5-a415-40ed-b0b8-9c5e1486bde9"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210607T092512Z:5004c405-b72c-4b0b-ac6c-e80a8104de68"
+          "CENTRALUS:20210611T092214Z:344338c5-a415-40ed-b0b8-9c5e1486bde9"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -60,79 +51,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 7EA5BBE0E32E4EF79B972CD9D8E2B57C Ref B: SG2EDGE1416 Ref C: 2021-06-07T09:25:11Z"
+          "Ref A: 6D46992A9F3141BAABB4D01D4A535BEB Ref B: SG2EDGE1620 Ref C: 2021-06-11T09:22:12Z"
         ],
         "Date": [
-          "Mon, 07 Jun 2021 09:25:11 GMT"
+          "Fri, 11 Jun 2021 09:22:14 GMT"
         ],
         "Content-Length": [
-          "191"
-        ],
-        "Content-Type": [
-          "application/json"
-        ],
-        "Expires": [
-          "-1"
-        ]
-      },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/' with error: Bad Request\"\r\n  }\r\n}",
-      "StatusCode": 400
-    },
-    {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/20210607172512215/osUpdates?osUpdateType=Security%20updates&api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvMjAyMTA2MDcxNzI1MTIyMTUvb3NVcGRhdGVzP29zVXBkYXRlVHlwZT1TZWN1cml0eSUyMHVwZGF0ZXMmYXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
-      "RequestMethod": "GET",
-      "RequestBody": "",
-      "RequestHeaders": {
-        "x-ms-client-request-id": [
-          "c69e689b-797c-41bd-8a73-09ad1f29984b"
-        ],
-        "Accept-Language": [
-          "en-US"
-        ],
-        "User-Agent": [
-          "FxVersion/4.6.30015.01",
-          "OSName/Windows",
-          "OSVersion/Microsoft.Windows.10.0.19043.",
-          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
-        ]
-      },
-      "ResponseHeaders": {
-        "Cache-Control": [
-          "no-cache"
-        ],
-        "Pragma": [
-          "no-cache"
-        ],
-        "x-ms-failure-cause": [
-          "gateway"
-        ],
-        "x-ms-request-id": [
-          "7d31ca24-1f82-414b-aacd-18be8461fcff"
-        ],
-        "x-ms-correlation-request-id": [
-          "7d31ca24-1f82-414b-aacd-18be8461fcff"
-        ],
-        "x-ms-routing-request-id": [
-          "CENTRALUS:20210607T092512Z:7d31ca24-1f82-414b-aacd-18be8461fcff"
-        ],
-        "Strict-Transport-Security": [
-          "max-age=31536000; includeSubDomains"
-        ],
-        "X-Content-Type-Options": [
-          "nosniff"
-        ],
-        "X-Cache": [
-          "CONFIG_NOCACHE"
-        ],
-        "X-MSEdge-Ref": [
-          "Ref A: 76F499F5D2C441E89E968AFAC4EF75C0 Ref B: SG2EDGE1416 Ref C: 2021-06-07T09:25:12Z"
-        ],
-        "Date": [
-          "Mon, 07 Jun 2021 09:25:12 GMT"
-        ],
-        "Content-Length": [
-          "180"
+          "4357"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -141,17 +66,17 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ParentResourceNotFound\",\r\n    \"message\": \"Can not perform requested operation on nested resource. Parent resource 'testBaseAccount_kaifa/20210607172512215' not found.\"\r\n  }\r\n}",
-      "StatusCode": 404
+      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2\",\r\n      \"name\": \"TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 21H1\",\r\n        \"release\": \"2021.05 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.985\",\r\n        \"buildRevision\": \"985\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-04-28T17:22:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-390f7a6a-540b-3371-a139-10e24c138608\",\r\n      \"name\": \"TestResultOs-390f7a6a-540b-3371-a139-10e24c138608\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 1909\",\r\n        \"release\": \"2021.06 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"18362.1621\",\r\n        \"buildRevision\": \"1621\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-06-05T20:04:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-713de211-6eff-3d00-ad1f-7ea5819ce845\",\r\n      \"name\": \"TestResultOs-713de211-6eff-3d00-ad1f-7ea5819ce845\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 2004\",\r\n        \"release\": \"2021.05 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.984\",\r\n        \"buildRevision\": \"984\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-04-26T17:23:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-f7836bfe-3223-3356-a237-a9b5580b8e08\",\r\n      \"name\": \"TestResultOs-f7836bfe-3223-3356-a237-a9b5580b8e08\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 20H2\",\r\n        \"release\": \"2021.05 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.985\",\r\n        \"buildRevision\": \"985\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-04-28T17:22:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-058ae4e6-db68-34c1-9285-66e3bd60d37d\",\r\n      \"name\": \"TestResultOs-058ae4e6-db68-34c1-9285-66e3bd60d37d\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 1909\",\r\n        \"release\": \"2021.05 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"18362.1556\",\r\n        \"buildRevision\": \"1556\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-04-30T14:52:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-9f205e7d-cff3-3fae-a62e-645a3b7692c9\",\r\n      \"name\": \"TestResultOs-9f205e7d-cff3-3fae-a62e-645a3b7692c9\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 21H1\",\r\n        \"release\": \"2021.06 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.1052\",\r\n        \"buildRevision\": \"1052\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-06-04T16:52:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-b2c129b7-9a20-3cc6-9766-f883aedcbed4\",\r\n      \"name\": \"TestResultOs-b2c129b7-9a20-3cc6-9766-f883aedcbed4\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 2004\",\r\n        \"release\": \"2021.06 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.1052\",\r\n        \"buildRevision\": \"1052\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-06-04T16:52:00Z\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-5d090cb3-3fb1-37a1-9170-f5a7964f77d2\",\r\n      \"name\": \"TestResultOs-5d090cb3-3fb1-37a1-9170-f5a7964f77d2\",\r\n      \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n      \"properties\": {\r\n        \"osName\": \"Windows 10 20H2\",\r\n        \"release\": \"2021.06 B\",\r\n        \"flightingRing\": \"\",\r\n        \"buildVersion\": \"19041.1052\",\r\n        \"buildRevision\": \"1052\",\r\n        \"type\": \"Security\",\r\n        \"releaseVersionDate\": \"2021-06-04T16:52:00Z\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/Windows-10-21H1?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL29zVXBkYXRlcy9XaW5kb3dzLTEwLTIxSDE/YXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates?osUpdateType=FeatureUpdate&api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL29zVXBkYXRlcz9vc1VwZGF0ZVR5cGU9RmVhdHVyZVVwZGF0ZSZhcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "32f71c68-f305-4f95-9974-85d065722e79"
+          "59e8d4d4-1642-4028-810a-66618a4d8389"
         ],
         "Accept-Language": [
           "en-US"
@@ -170,29 +95,20 @@
         "Pragma": [
           "no-cache"
         ],
-        "Set-Cookie": [
-          "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net;ARRAffinitySameSite=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
-        ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14974"
+          "14984"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
-        "x-ms-failure-cause": [
-          "service"
-        ],
         "x-ms-request-id": [
-          "9ff38280-545f-4a5e-bc55-891d92e87051"
+          "e942f770-c1a1-4f35-a2a6-07861dc73a6b"
         ],
         "x-ms-correlation-request-id": [
-          "8e683351-ca27-49c5-b531-2afdeec18dc9"
-        ],
-        "X-Powered-By": [
-          "ASP.NET"
+          "1e616e1d-3dcc-4594-be65-75efa61f55f5"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210607T092537Z:8e683351-ca27-49c5-b531-2afdeec18dc9"
+          "CENTRALUS:20210611T092215Z:1e616e1d-3dcc-4594-be65-75efa61f55f5"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -204,23 +120,92 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: F11660F5C72D45BC93A3E8EE895B32C9 Ref B: SG2EDGE1417 Ref C: 2021-06-07T09:25:36Z"
+          "Ref A: EA7419A22BCC4E6E8B5D183CF2F99FF6 Ref B: SG2EDGE1620 Ref C: 2021-06-11T09:22:14Z"
         ],
         "Date": [
-          "Mon, 07 Jun 2021 09:25:37 GMT"
+          "Fri, 11 Jun 2021 09:22:14 GMT"
         ],
         "Content-Length": [
-          "312"
+          "12"
         ],
         "Content-Type": [
-          "application/json"
+          "application/json; charset=utf-8"
         ],
         "Expires": [
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/Windows-10-21H1' with error: Internal Server Error\"\r\n  }\r\n}",
-      "StatusCode": 500
+      "ResponseBody": "{\r\n  \"value\": []\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL29zVXBkYXRlcy9UZXN0UmVzdWx0T3MtZmQ3YTU2ZTUtMTIxZS0zZTMxLTg1NzEtZjg1NmEwMmE3NGYyP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "98c7a7df-088d-475b-b9ec-b23971eafc65"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.30015.01",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14983"
+        ],
+        "x-ms-providerhub-traffic": [
+          "True"
+        ],
+        "x-ms-request-id": [
+          "099a3eda-5bc5-4185-96cb-c2063d37deb1"
+        ],
+        "x-ms-correlation-request-id": [
+          "236290d7-f277-4e0f-b4a9-c902abb1e02c"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20210611T092215Z:236290d7-f277-4e0f-b4a9-c902abb1e02c"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
+        "X-MSEdge-Ref": [
+          "Ref A: 580B75003B7D418B80B6DE02DB0505AA Ref B: SG2EDGE1620 Ref C: 2021-06-11T09:22:15Z"
+        ],
+        "Date": [
+          "Fri, 11 Jun 2021 09:22:15 GMT"
+        ],
+        "Content-Length": [
+          "541"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/osUpdates/TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2\",\r\n  \"name\": \"TestResultOs-fd7a56e5-121e-3e31-8571-f856a02a74f2\",\r\n  \"type\": \"testBaseAccounts/packages/osUpdates\",\r\n  \"properties\": {\r\n    \"osName\": \"Windows 10 21H1\",\r\n    \"release\": \"2021.05 B\",\r\n    \"flightingRing\": \"\",\r\n    \"buildVersion\": \"19041.985\",\r\n    \"buildRevision\": \"985\",\r\n    \"type\": \"Security\",\r\n    \"releaseVersionDate\": \"2021-04-28T17:22:00Z\"\r\n  }\r\n}",
+      "StatusCode": 200
     }
   ],
   "Names": {},
