@@ -1,13 +1,157 @@
 {
   "Entries": [
     {
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/favoriteProcesses/AM_Base.exe?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL2Zhdm9yaXRlUHJvY2Vzc2VzL0FNX0Jhc2UuZXhlP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestMethod": "PUT",
+      "RequestBody": "{}",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "8b82b1bb-8a11-4b40-9fe0-1583d90f3671"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.30015.01",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Content-Length": [
+          "2"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1199"
+        ],
+        "x-ms-providerhub-traffic": [
+          "True"
+        ],
+        "x-ms-failure-cause": [
+          "provider-api-validation"
+        ],
+        "x-ms-request-id": [
+          "8a98ab92-cb21-4d65-b437-bf74f630d3d0"
+        ],
+        "x-ms-correlation-request-id": [
+          "664ebdde-85e5-44d8-affd-e78b00f7a963"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20210617T073635Z:664ebdde-85e5-44d8-affd-e78b00f7a963"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
+        "X-MSEdge-Ref": [
+          "Ref A: 330C68013E8E46A384B93FF7EB97C431 Ref B: SG2EDGE1613 Ref C: 2021-06-17T07:36:34Z"
+        ],
+        "Date": [
+          "Thu, 17 Jun 2021 07:36:34 GMT"
+        ],
+        "Content-Length": [
+          "540"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"HttpResponsePayloadAPISpecValidationFailed\",\r\n    \"target\": \"Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/favoriteProcesses/AM_Base.exe\",\r\n    \"message\": \"Failed to create HTTP response as per the API specification with one or more errors. Please see details for more information. Consider to retry operation with api-versions ''.\",\r\n    \"details\": [\r\n      {\r\n        \"code\": \"ObjectMissingRequiredProperty\",\r\n        \"message\": \"Missing required property: actualProcessName. Paths in payload: '$.properties.actualProcessName'\"\r\n      }\r\n    ]\r\n  }\r\n}",
+      "StatusCode": 412
+    },
+    {
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/package2_kaifa-1.0/favoriteProcesses/AM_Base.exe?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvcGFja2FnZTJfa2FpZmEtMS4wL2Zhdm9yaXRlUHJvY2Vzc2VzL0FNX0Jhc2UuZXhlP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestMethod": "DELETE",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "e13b3ab5-0261-475a-8047-cbceff3be193"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.30015.01",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.19043.",
+          "Microsoft.TestBase.TestBaseClient/0.0.0.1"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-providerhub-traffic": [
+          "True"
+        ],
+        "x-ms-request-id": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [
+          "14999"
+        ],
+        "x-ms-correlation-request-id": [
+          "41892dcf-0dd6-4c75-8120-59d45fe31159"
+        ],
+        "x-ms-routing-request-id": [
+          "CENTRALUS:20210617T073635Z:41892dcf-0dd6-4c75-8120-59d45fe31159"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "X-Cache": [
+          "CONFIG_NOCACHE"
+        ],
+        "X-MSEdge-Ref": [
+          "Ref A: 4D387C3A9A8E4699B8D3540F4793D44F Ref B: SG2EDGE1309 Ref C: 2021-06-17T07:36:34Z"
+        ],
+        "Date": [
+          "Thu, 17 Jun 2021 07:36:34 GMT"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Content-Length": [
+          "0"
+        ]
+      },
+      "ResponseBody": "",
+      "StatusCode": 200
+    },
+    {
       "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages?api-version=2020-12-16-preview",
       "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXM/YXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "49461fd2-608f-4bbb-8e2a-b3780634923b"
+          "57a02aef-d371-4b14-a2bf-b9b064badd36"
         ],
         "Accept-Language": [
           "en-US"
@@ -27,19 +171,19 @@
           "no-cache"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14985"
+          "14995"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "3a1e3fe5-68cb-4c5b-b9d5-09e6b32445cb"
+          "ebaf1507-639b-4cb5-8be3-abe58ec0eba5"
         ],
         "x-ms-correlation-request-id": [
-          "71280998-4a3f-4cfe-826c-1d97edce4827"
+          "7e4de096-6d14-4496-af1d-77f8bb38d6a2"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093908Z:71280998-4a3f-4cfe-826c-1d97edce4827"
+          "CENTRALUS:20210617T073636Z:7e4de096-6d14-4496-af1d-77f8bb38d6a2"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -51,10 +195,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 3737214E6EF4451F9E957D7FD28269B9 Ref B: SG2EDGE1706 Ref C: 2021-06-11T09:39:07Z"
+          "Ref A: 2FB5DD40CA29467F8035A525D10A4C98 Ref B: SG2EDGE1612 Ref C: 2021-06-17T07:36:35Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:08 GMT"
+          "Thu, 17 Jun 2021 07:36:36 GMT"
         ],
         "Content-Length": [
           "9158"
@@ -70,13 +214,13 @@
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/20210611173909000?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvMjAyMTA2MTExNzM5MDkwMDA/YXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/20210617153636742?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvMjAyMTA2MTcxNTM2MzY3NDI/YXBpLXZlcnNpb249MjAyMC0xMi0xNi1wcmV2aWV3",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "232ef595-1a57-4dab-af41-2e77f2ff06a5"
+          "0ad132d2-e021-4883-81f9-d11fed2116e3"
         ],
         "Accept-Language": [
           "en-US"
@@ -99,13 +243,13 @@
           "gateway"
         ],
         "x-ms-request-id": [
-          "914a7351-9ae6-425e-b3f8-c8149ae918b6"
+          "30a98f5e-9360-4547-8826-ba6f0519ff68"
         ],
         "x-ms-correlation-request-id": [
-          "914a7351-9ae6-425e-b3f8-c8149ae918b6"
+          "30a98f5e-9360-4547-8826-ba6f0519ff68"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093909Z:914a7351-9ae6-425e-b3f8-c8149ae918b6"
+          "CENTRALUS:20210617T073637Z:30a98f5e-9360-4547-8826-ba6f0519ff68"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -117,10 +261,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: D2CE4B25F19F4602BFA013ACCE8E6E77 Ref B: SG2EDGE1706 Ref C: 2021-06-11T09:39:09Z"
+          "Ref A: 3BC3845E736E41319E8AE08E04693684 Ref B: SG2EDGE1612 Ref C: 2021-06-17T07:36:36Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:09 GMT"
+          "Thu, 17 Jun 2021 07:36:37 GMT"
         ],
         "Content-Length": [
           "267"
@@ -132,7 +276,7 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceNotFound\",\r\n    \"message\": \"The Resource 'Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/20210611173909000' under resource group 'testbase_rg' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceNotFound\",\r\n    \"message\": \"The Resource 'Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/20210617153636742' under resource group 'testbase_rg' was not found. For more details please go to https://aka.ms/ARMResourceNotFoundFix\"\r\n  }\r\n}",
       "StatusCode": 404
     },
     {
@@ -142,7 +286,7 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "f715fc8a-cc17-4ce5-97d4-ffee81815fd2"
+          "09f43384-7193-49a8-b3d6-a25b540f6727"
         ],
         "Accept-Language": [
           "en-US"
@@ -165,19 +309,19 @@
           "\"0101ba8a-0000-0700-0000-60af04c70000\""
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14986"
+          "14992"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "6c86fc25-c63a-4ab4-8460-914a13264022"
+          "e271c461-4de6-45d5-ab3d-47875f4c1bfd"
         ],
         "x-ms-correlation-request-id": [
-          "7a90aaa9-abbd-45b9-b366-aed2a1b725af"
+          "0729cf5c-9fd9-4490-b8b4-b24da0777caa"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093910Z:7a90aaa9-abbd-45b9-b366-aed2a1b725af"
+          "CENTRALUS:20210617T073637Z:0729cf5c-9fd9-4490-b8b4-b24da0777caa"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -189,10 +333,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: A178237320014E1BB996B6FB6ECAAE7D Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:09Z"
+          "Ref A: B8E632C8D5AE4599894249B48E210DF0 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:36:37Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:10 GMT"
+          "Thu, 17 Jun 2021 07:36:36 GMT"
         ],
         "Content-Length": [
           "2296"
@@ -214,7 +358,7 @@
       "RequestBody": "{\r\n  \"blobName\": \"test.zip\"\r\n}",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "0e0b5922-25dd-4511-b5b8-307083a2ea2e"
+          "e11f6d72-4873-4aa2-9dbc-f3808c0b3441"
         ],
         "Accept-Language": [
           "en-US"
@@ -256,13 +400,13 @@
           "ASP.NET"
         ],
         "x-ms-request-id": [
-          "812e9f14-cb24-4d75-ba2b-87d7ae3029b9"
+          "0aa05aa9-8360-4436-9cf0-560f4964b61d"
         ],
         "x-ms-correlation-request-id": [
-          "c5c5d261-2853-4d12-bfbe-c8b80586383e"
+          "e7a60a39-f1a2-444c-a556-d92c5541bc46"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093910Z:c5c5d261-2853-4d12-bfbe-c8b80586383e"
+          "CENTRALUS:20210617T073638Z:e7a60a39-f1a2-444c-a556-d92c5541bc46"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -274,13 +418,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: E1BD89A66C9D4666A817A361E360F30D Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:10Z"
+          "Ref A: 7B6D57B4E42B40C3BCFE764E18AE1E3D Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:36:37Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:10 GMT"
+          "Thu, 17 Jun 2021 07:36:37 GMT"
         ],
         "Content-Length": [
-          "359"
+          "357"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -289,17 +433,17 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"uploadUrl\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip?sv=2019-07-07&sr=b&sig=vyY9ZAs%2B%2BN%2FTRxOueMc0TbtJay3gv7JhwPEHDso1CfE%3D&se=2021-06-12T09%3A39%3A10Z&sp=acw\",\r\n  \"blobPath\": \"c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\"\r\n}",
+      "ResponseBody": "{\r\n  \"uploadUrl\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip?sv=2019-07-07&sr=b&sig=X5ZNtaJ9Qw5WNC8Pk%2Byss%2BNu712IuIs6Odvu2De4HLE%3D&se=2021-06-18T07%3A36%3A38Z&sp=acw\",\r\n  \"blobPath\": \"c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\"\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "PUT",
-      "RequestBody": "{\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase4417_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  },\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"location\": \"global\"\r\n}",
+      "RequestBody": "{\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase6486_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  },\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"location\": \"global\"\r\n}",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "a2d61c64-4415-44a2-8e4e-dbc6d3e94008"
+          "31602850-5fe1-4f00-802c-c5c901e0b2d6"
         ],
         "Accept-Language": [
           "en-US"
@@ -325,35 +469,35 @@
           "no-cache"
         ],
         "ETag": [
-          "\"fa02846d-0000-0700-0000-60c32f440000\""
+          "\"05005a3f-0000-0700-0000-60cafb8b0000\""
         ],
         "Location": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/c43913d7-911f-49a4-8da3-97c970282ddb?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/5eb099ea-98f4-4193-9f0e-844f2b8178bc?api-version=2020-12-16-preview"
         ],
         "Set-Cookie": [
           "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net",
           "ARRAffinitySameSite=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
         ],
         "x-ms-ratelimit-remaining-subscription-writes": [
-          "1199"
+          "1198"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "Azure-AsyncOperation": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/c43913d7-911f-49a4-8da3-97c970282ddb?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/5eb099ea-98f4-4193-9f0e-844f2b8178bc?api-version=2020-12-16-preview"
         ],
         "X-Powered-By": [
           "ASP.NET"
         ],
         "x-ms-request-id": [
-          "c43913d7-911f-49a4-8da3-97c970282ddb"
+          "5eb099ea-98f4-4193-9f0e-844f2b8178bc"
         ],
         "x-ms-correlation-request-id": [
-          "0ba27555-07f8-4cde-97ec-b97959a9c708"
+          "1ae732d5-3e39-4045-a348-3687d7c8f6e1"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093917Z:0ba27555-07f8-4cde-97ec-b97959a9c708"
+          "CENTRALUS:20210617T073644Z:1ae732d5-3e39-4045-a348-3687d7c8f6e1"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -365,10 +509,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 7AAB268E65044807B9A9EF68F8D5B60B Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:14Z"
+          "Ref A: 35CF33D5E9FF4441A9483A745FB9342E Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:36:41Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:17 GMT"
+          "Thu, 17 Jun 2021 07:36:44 GMT"
         ],
         "Content-Length": [
           "2190"
@@ -380,12 +524,12 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"name\": \"testbase4417_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"systemData\": {\r\n    \"createdBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2021-06-11T09:39:15.9252916Z\",\r\n    \"lastModifiedBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2021-06-11T09:39:15.9252916Z\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase4417_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Accepted\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"name\": \"testbase6486_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"systemData\": {\r\n    \"createdBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2021-06-17T07:36:43.4762892Z\",\r\n    \"lastModifiedBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2021-06-17T07:36:43.4762892Z\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase6486_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Accepted\"\r\n  }\r\n}",
       "StatusCode": 201
     },
     {
-      "RequestUri": "/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/c43913d7-911f-49a4-8da3-97c970282ddb?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvbG9jYXRpb25zL05PUlRIRVVST1BFL29wZXJhdGlvblN0YXR1c2VzL2M0MzkxM2Q3LTkxMWYtNDlhNC04ZGEzLTk3Yzk3MDI4MmRkYj9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/5eb099ea-98f4-4193-9f0e-844f2b8178bc?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvbG9jYXRpb25zL05PUlRIRVVST1BFL29wZXJhdGlvblN0YXR1c2VzLzVlYjA5OWVhLTk4ZjQtNDE5My05ZjBlLTg0NGYyYjgxNzhiYz9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -404,19 +548,19 @@
           "no-cache"
         ],
         "ETag": [
-          "\"3300881e-0000-0700-0000-60c32f480000\""
+          "\"03006dc1-0000-0700-0000-60cafb960000\""
         ],
         "x-ms-ratelimit-remaining-tenant-reads": [
-          "14995"
+          "14998"
         ],
         "x-ms-request-id": [
-          "92ffcf83-aae4-4f17-8c6c-01a4e3646745"
+          "c22b4a07-9a8a-4168-a358-525eecd6e48a"
         ],
         "x-ms-correlation-request-id": [
-          "4965c853-d777-4dfd-9781-822943678861"
+          "e5de11fb-5987-4726-a1e1-167d302b25d9"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093947Z:4965c853-d777-4dfd-9781-822943678861"
+          "CENTRALUS:20210617T073715Z:e5de11fb-5987-4726-a1e1-167d302b25d9"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -428,10 +572,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 88BD84DA292A442B8666A7E26162D321 Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:47Z"
+          "Ref A: A0D234FFB5D7495E895D9E7A4456EAA8 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:15Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:47 GMT"
+          "Thu, 17 Jun 2021 07:37:14 GMT"
         ],
         "Content-Length": [
           "2138"
@@ -443,12 +587,12 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/c43913d7-911f-49a4-8da3-97c970282ddb\",\r\n  \"name\": \"c43913d7-911f-49a4-8da3-97c970282ddb\",\r\n  \"resourceId\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"status\": \"Succeeded\",\r\n  \"startTime\": \"2021-06-11T09:39:16.0453535Z\",\r\n  \"endTime\": \"2021-06-11T09:39:20.2979749Z\",\r\n  \"percentComplete\": 100.0,\r\n  \"properties\": {\r\n    \"ApplicationName\": \"testbase4417_pkg\",\r\n    \"Version\": \"1.0.0\",\r\n    \"TargetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"PackageStatus\": \"Unknown\",\r\n    \"FlightingRing\": \"Insider Beta Channel\",\r\n    \"BlobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"Tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Unknown\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"ProvisioningState\": \"Accepted\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/5eb099ea-98f4-4193-9f0e-844f2b8178bc\",\r\n  \"name\": \"5eb099ea-98f4-4193-9f0e-844f2b8178bc\",\r\n  \"resourceId\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"status\": \"Succeeded\",\r\n  \"startTime\": \"2021-06-17T07:36:43.5993785Z\",\r\n  \"endTime\": \"2021-06-17T07:36:54.7407921Z\",\r\n  \"percentComplete\": 100.0,\r\n  \"properties\": {\r\n    \"ApplicationName\": \"testbase6486_pkg\",\r\n    \"Version\": \"1.0.0\",\r\n    \"TargetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"PackageStatus\": \"Unknown\",\r\n    \"FlightingRing\": \"Insider Beta Channel\",\r\n    \"BlobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"Tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Unknown\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"ProvisioningState\": \"Accepted\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -467,22 +611,22 @@
           "no-cache"
         ],
         "ETag": [
-          "\"fa021270-0000-0700-0000-60c32f480000\""
+          "\"05002c41-0000-0700-0000-60cafb960000\""
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14985"
+          "14991"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "663a0d03-2c94-4323-bc1c-c12ac9f6bd44"
+          "289a7d53-331c-485a-b396-c7756f96ec01"
         ],
         "x-ms-correlation-request-id": [
-          "5fc2f9e3-1893-4b82-89ef-4d09d9d66333"
+          "fcc06617-3d37-407b-b782-e0274cdb728e"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093948Z:5fc2f9e3-1893-4b82-89ef-4d09d9d66333"
+          "CENTRALUS:20210617T073721Z:fcc06617-3d37-407b-b782-e0274cdb728e"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -494,10 +638,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: EE8017A36E9A4B158A10BCF92CD25E42 Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:47Z"
+          "Ref A: 28258333954D469098105E1E5F252632 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:15Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:48 GMT"
+          "Thu, 17 Jun 2021 07:37:20 GMT"
         ],
         "Content-Length": [
           "2225"
@@ -509,12 +653,12 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"name\": \"testbase4417_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase4417_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"testTypes\": [\r\n      \"OutOfBoxTest\"\r\n    ],\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"packageStatus\": \"VerifyingPackage\",\r\n    \"lastModifiedTime\": \"2021-06-11T09:39:17Z\",\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"isEnabled\": true,\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"validationResults\": [\r\n      {\r\n        \"validationName\": \"Sanity Checks Validator\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      },\r\n      {\r\n        \"validationName\": \"CopyZipPackage\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      }\r\n    ],\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Pending\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"name\": \"testbase6486_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"test\": \"test\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase6486_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"testTypes\": [\r\n      \"OutOfBoxTest\"\r\n    ],\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"packageStatus\": \"VerifyingPackage\",\r\n    \"lastModifiedTime\": \"2021-06-17T07:36:44Z\",\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"isEnabled\": true,\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"validationResults\": [\r\n      {\r\n        \"validationName\": \"Sanity Checks Validator\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      },\r\n      {\r\n        \"validationName\": \"CopyZipPackage\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      }\r\n    ],\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Pending\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -533,22 +677,22 @@
           "no-cache"
         ],
         "ETag": [
-          "\"fa020387-0000-0700-0000-60c32f680000\""
+          "\"0500cb47-0000-0700-0000-60cafbb80000\""
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14985"
+          "14990"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-request-id": [
-          "1a02d16a-64af-48c4-9e47-91fc10fcda49"
+          "5fd561ae-fe39-45d0-906e-3264734a463f"
         ],
         "x-ms-correlation-request-id": [
-          "4bc95c3a-e418-417b-914a-369ba2b94609"
+          "d121cb8e-230f-4a67-abe8-9b701233d381"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T094020Z:4bc95c3a-e418-417b-914a-369ba2b94609"
+          "CENTRALUS:20210617T073755Z:d121cb8e-230f-4a67-abe8-9b701233d381"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -560,10 +704,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: C7E2D5A022D34897950BB7ED4118BB9A Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:40:20Z"
+          "Ref A: EE961B6063B84454832534DA999FB42F Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:53Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:40:21 GMT"
+          "Thu, 17 Jun 2021 07:37:54 GMT"
         ],
         "Content-Length": [
           "2247"
@@ -575,17 +719,17 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"name\": \"testbase4417_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210611_173948\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase4417_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"testTypes\": [\r\n      \"OutOfBoxTest\"\r\n    ],\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"packageStatus\": \"VerifyingPackage\",\r\n    \"lastModifiedTime\": \"2021-06-11T09:39:17Z\",\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"isEnabled\": true,\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"validationResults\": [\r\n      {\r\n        \"validationName\": \"Sanity Checks Validator\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      },\r\n      {\r\n        \"validationName\": \"CopyZipPackage\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      }\r\n    ],\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Pending\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"name\": \"testbase6486_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210617_153721\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase6486_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"testTypes\": [\r\n      \"OutOfBoxTest\"\r\n    ],\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"packageStatus\": \"VerifyingPackage\",\r\n    \"lastModifiedTime\": \"2021-06-17T07:36:44Z\",\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"isEnabled\": true,\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"validationResults\": [\r\n      {\r\n        \"validationName\": \"Sanity Checks Validator\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      },\r\n      {\r\n        \"validationName\": \"CopyZipPackage\",\r\n        \"isValid\": true,\r\n        \"errors\": []\r\n      }\r\n    ],\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Pending\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "PATCH",
-      "RequestBody": "{\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210611_173948\"\r\n  }\r\n}",
+      "RequestBody": "{\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210617_153721\"\r\n  }\r\n}",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "1f8d901a-dbf8-4007-98e1-910b2cc69772"
+          "61d27b2a-4e6d-4848-acf5-90b5d2f9c9ee"
         ],
         "Accept-Language": [
           "en-US"
@@ -611,35 +755,35 @@
           "no-cache"
         ],
         "ETag": [
-          "\"fa025883-0000-0700-0000-60c32f640000\""
+          "\"05008146-0000-0700-0000-60cafbb20000\""
         ],
         "Location": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e35a3f03-dbe5-4b55-be9c-44ca163485f9?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f08888df-2c9f-41e0-8bdb-3d2235720c69?api-version=2020-12-16-preview"
         ],
         "Set-Cookie": [
           "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net",
           "ARRAffinitySameSite=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;SameSite=None;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net"
         ],
         "x-ms-ratelimit-remaining-subscription-writes": [
-          "1198"
+          "1197"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "Azure-AsyncOperation": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e35a3f03-dbe5-4b55-be9c-44ca163485f9?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f08888df-2c9f-41e0-8bdb-3d2235720c69?api-version=2020-12-16-preview"
         ],
         "X-Powered-By": [
           "ASP.NET"
         ],
         "x-ms-request-id": [
-          "e35a3f03-dbe5-4b55-be9c-44ca163485f9"
+          "f08888df-2c9f-41e0-8bdb-3d2235720c69"
         ],
         "x-ms-correlation-request-id": [
-          "9575de5b-0878-489b-97d9-906251e0d774"
+          "d4bf1bc7-e3f6-4a95-844f-1821681f2ca2"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T093950Z:9575de5b-0878-489b-97d9-906251e0d774"
+          "CENTRALUS:20210617T073723Z:d4bf1bc7-e3f6-4a95-844f-1821681f2ca2"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -651,13 +795,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 068E8E08F8E44DF9A5F158FCDE89102E Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:39:48Z"
+          "Ref A: 37F3001545424FF5B622D8EA7A481D83 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:21Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:39:50 GMT"
+          "Thu, 17 Jun 2021 07:37:22 GMT"
         ],
         "Content-Length": [
-          "2320"
+          "2319"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -666,12 +810,12 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"name\": \"testbase4417_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"etag\": \"\\\"fa021270-0000-0700-0000-60c32f480000\\\"\",\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210611_173948\"\r\n  },\r\n  \"systemData\": {\r\n    \"createdBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2021-06-11T09:39:15.9252916Z\",\r\n    \"lastModifiedBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2021-06-11T09:39:48.5963852Z\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase4417_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/5c35bf60-05da-4a55-9cd3-04457bef31ba/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Unknown\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Accepted\",\r\n    \"packageStatus\": \"Unknown\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"name\": \"testbase6486_pkg-1.0.0\",\r\n  \"type\": \"microsoft.testbase/testbaseaccounts/packages\",\r\n  \"location\": \"global\",\r\n  \"etag\": \"\\\"05002c41-0000-0700-0000-60cafb960000\\\"\",\r\n  \"tags\": {\r\n    \"tagkey\": \"tagvalue_20210617_153721\"\r\n  },\r\n  \"systemData\": {\r\n    \"createdBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2021-06-17T07:36:43.4762892Z\",\r\n    \"lastModifiedBy\": \"c7ffd595-6c07-4e87-a52f-810916ffaec5\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2021-06-17T07:37:22.244194Z\"\r\n  },\r\n  \"properties\": {\r\n    \"applicationName\": \"testbase6486_pkg\",\r\n    \"version\": \"1.0.0\",\r\n    \"targetOSList\": [\r\n      {\r\n        \"osUpdateType\": \"Feature updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 20H2\"\r\n        ]\r\n      },\r\n      {\r\n        \"osUpdateType\": \"Security updates\",\r\n        \"targetOSs\": [\r\n          \"Windows 10 21H1\",\r\n          \"Windows 10 20H2\",\r\n          \"Windows 10 2004\",\r\n          \"Windows 10 1909\",\r\n          \"All Future OS Updates\",\r\n          \"Windows Server 2019\",\r\n          \"Windows Server 2019 - Server Core\",\r\n          \"Windows Server 2016\",\r\n          \"Windows Server 2016 - Server Core\"\r\n        ]\r\n      }\r\n    ],\r\n    \"flightingRing\": \"Insider Beta Channel\",\r\n    \"blobPath\": \"https://tbwestusppesa.blob.core.windows.net/c0097881-16f2-4c2a-b6f1-1e2c7d7cb8e7/temp/b1331037-698d-4d54-9141-1ea2fca49606/test.zip\",\r\n    \"tests\": [\r\n      {\r\n        \"testType\": \"OutOfBoxTest\",\r\n        \"validationRunStatus\": \"Unknown\",\r\n        \"isActive\": true,\r\n        \"commands\": [\r\n          {\r\n            \"name\": \"install\",\r\n            \"action\": \"Install\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/install/job.ps1\",\r\n            \"runElevated\": false,\r\n            \"restartAfter\": true,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"launch\",\r\n            \"action\": \"Launch\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/launch/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": true\r\n          },\r\n          {\r\n            \"name\": \"close\",\r\n            \"action\": \"Close\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/close/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": false,\r\n            \"applyUpdateBefore\": false\r\n          },\r\n          {\r\n            \"name\": \"uninstall\",\r\n            \"action\": \"Uninstall\",\r\n            \"contentType\": \"Path\",\r\n            \"content\": \"test/scripts/uninstall/job.ps1\",\r\n            \"runElevated\": true,\r\n            \"restartAfter\": false,\r\n            \"maxRunTime\": 1800,\r\n            \"runAsInteractive\": true,\r\n            \"alwaysRun\": true,\r\n            \"applyUpdateBefore\": false\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"provisioningState\": \"Accepted\",\r\n    \"packageStatus\": \"Unknown\"\r\n  }\r\n}",
       "StatusCode": 201
     },
     {
-      "RequestUri": "/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e35a3f03-dbe5-4b55-be9c-44ca163485f9?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvbG9jYXRpb25zL05PUlRIRVVST1BFL29wZXJhdGlvblN0YXR1c2VzL2UzNWEzZjAzLWRiZTUtNGI1NS1iZTljLTQ0Y2ExNjM0ODVmOT9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f08888df-2c9f-41e0-8bdb-3d2235720c69?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvbG9jYXRpb25zL05PUlRIRVVST1BFL29wZXJhdGlvblN0YXR1c2VzL2YwODg4OGRmLTJjOWYtNDFlMC04YmRiLTNkMjIzNTcyMGM2OT9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -690,19 +834,19 @@
           "no-cache"
         ],
         "ETag": [
-          "\"3300dd1e-0000-0700-0000-60c32f680000\""
+          "\"0300c5c3-0000-0700-0000-60cafbb80000\""
         ],
         "x-ms-ratelimit-remaining-tenant-reads": [
-          "14994"
+          "14997"
         ],
         "x-ms-request-id": [
-          "fbfd8bd4-b135-4fc1-8e00-2ade2df0e860"
+          "902d80ff-cc1b-49ef-9243-c0333a4b2c27"
         ],
         "x-ms-correlation-request-id": [
-          "aa51cd96-22f3-4133-86c0-b34023465534"
+          "787e50bb-435f-474f-b3b3-9eaf388b0ec7"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T094020Z:aa51cd96-22f3-4133-86c0-b34023465534"
+          "CENTRALUS:20210617T073753Z:787e50bb-435f-474f-b3b3-9eaf388b0ec7"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -714,10 +858,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: A250DBF443B24B04A74120C64A41412A Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:40:20Z"
+          "Ref A: 42B0FAF805B648488BAEF8A284255C77 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:53Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:40:20 GMT"
+          "Thu, 17 Jun 2021 07:37:52 GMT"
         ],
         "Content-Length": [
           "557"
@@ -729,17 +873,17 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e35a3f03-dbe5-4b55-be9c-44ca163485f9\",\r\n  \"name\": \"e35a3f03-dbe5-4b55-be9c-44ca163485f9\",\r\n  \"resourceId\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0\",\r\n  \"status\": \"Succeeded\",\r\n  \"startTime\": \"2021-06-11T09:39:48.7094346Z\",\r\n  \"endTime\": \"2021-06-11T09:39:52.8928648Z\",\r\n  \"percentComplete\": 100.0,\r\n  \"properties\": {\r\n    \"PackageStatus\": \"Unknown\",\r\n    \"ProvisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f08888df-2c9f-41e0-8bdb-3d2235720c69\",\r\n  \"name\": \"f08888df-2c9f-41e0-8bdb-3d2235720c69\",\r\n  \"resourceId\": \"/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0\",\r\n  \"status\": \"Succeeded\",\r\n  \"startTime\": \"2021-06-17T07:37:22.3558174Z\",\r\n  \"endTime\": \"2021-06-17T07:37:28.7499948Z\",\r\n  \"percentComplete\": 100.0,\r\n  \"properties\": {\r\n    \"PackageStatus\": \"Unknown\",\r\n    \"ProvisioningState\": \"Succeeded\"\r\n  }\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMD9hcGktdmVyc2lvbj0yMDIwLTEyLTE2LXByZXZpZXc=",
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "e0df01ef-f6ad-4f53-9c80-3d2867561a94"
+          "92ee65c4-fddc-423e-86f8-d456fb639323"
         ],
         "Accept-Language": [
           "en-US"
@@ -774,16 +918,16 @@
           "gateway"
         ],
         "x-ms-request-id": [
-          "3a12f6bd-9698-4c43-835f-b6fc6d14f81f"
+          "2e05e883-5117-4f6f-9b4f-0643eeed2640"
         ],
         "x-ms-correlation-request-id": [
-          "c7a8ce09-4b85-4b20-b3bd-3d89cf9936b0"
+          "7274c2d1-3542-4e7a-b805-12b0318c5497"
         ],
         "X-Powered-By": [
           "ASP.NET"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T094021Z:c7a8ce09-4b85-4b20-b3bd-3d89cf9936b0"
+          "CENTRALUS:20210617T073755Z:7274c2d1-3542-4e7a-b805-12b0318c5497"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -795,10 +939,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 17999CF9FF5042AEBBF4F3344BAD7714 Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:40:21Z"
+          "Ref A: FBAA6C7944F64EACA620D2C224DC66D4 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:55Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:40:21 GMT"
+          "Thu, 17 Jun 2021 07:37:55 GMT"
         ],
         "Content-Length": [
           "107"
@@ -814,13 +958,13 @@
       "StatusCode": 400
     },
     {
-      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase4417_pkg-1.0.0/hardDelete?api-version=2020-12-16-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U0NDE3X3BrZy0xLjAuMC9oYXJkRGVsZXRlP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
+      "RequestUri": "/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/Microsoft.TestBase/testBaseAccounts/testBaseAccount_kaifa/packages/testbase6486_pkg-1.0.0/hardDelete?api-version=2020-12-16-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvOWZhYmYwMDEtOWMxZi00YWFiLTk0NTEtZTQzMWRhMjcxOTU2L3Jlc291cmNlR3JvdXBzL3Rlc3RiYXNlX3JnL3Byb3ZpZGVycy9NaWNyb3NvZnQuVGVzdEJhc2UvdGVzdEJhc2VBY2NvdW50cy90ZXN0QmFzZUFjY291bnRfa2FpZmEvcGFja2FnZXMvdGVzdGJhc2U2NDg2X3BrZy0xLjAuMC9oYXJkRGVsZXRlP2FwaS12ZXJzaW9uPTIwMjAtMTItMTYtcHJldmlldw==",
       "RequestMethod": "POST",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "33b65108-8fb5-4d64-aef7-dc73bd791ed3"
+          "f6e88baa-a302-4d17-af13-5dc3c2070d22"
         ],
         "Accept-Language": [
           "en-US"
@@ -840,7 +984,7 @@
           "no-cache"
         ],
         "Location": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f3bc991e-ceb9-4bc9-a491-c5865d1075f8?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e5f44cc0-ec84-42a7-9453-0878f4de9ba0?api-version=2020-12-16-preview"
         ],
         "Set-Cookie": [
           "ARRAffinity=097c6a6f3a847499345836b63bdc315d36554d5163b02e781367ecd0bf9d91af;Path=/;HttpOnly;Secure;Domain=tb-rp-webapp-ppe-wus.azurewebsites.net",
@@ -853,19 +997,19 @@
           "True"
         ],
         "Azure-AsyncOperation": [
-          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/f3bc991e-ceb9-4bc9-a491-c5865d1075f8?api-version=2020-12-16-preview"
+          "https://api-dogfood.resources.windows-int.net/providers/Microsoft.TestBase/locations/NORTHEUROPE/operationStatuses/e5f44cc0-ec84-42a7-9453-0878f4de9ba0?api-version=2020-12-16-preview"
         ],
         "X-Powered-By": [
           "ASP.NET"
         ],
         "x-ms-request-id": [
-          "f3bc991e-ceb9-4bc9-a491-c5865d1075f8"
+          "e5f44cc0-ec84-42a7-9453-0878f4de9ba0"
         ],
         "x-ms-correlation-request-id": [
-          "403d6bbc-92af-4e87-aba7-f49a54cf1abe"
+          "ba7845b6-ddbb-473f-992a-efecd322b793"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210611T094022Z:403d6bbc-92af-4e87-aba7-f49a54cf1abe"
+          "CENTRALUS:20210617T073756Z:ba7845b6-ddbb-473f-992a-efecd322b793"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -877,10 +1021,10 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 1FA6B5FD571143B0A47D251D1A7BD910 Ref B: SG2EDGE1407 Ref C: 2021-06-11T09:40:21Z"
+          "Ref A: 423E91E25C9D45C584641C70E77FB1A2 Ref B: SG2EDGE1615 Ref C: 2021-06-17T07:37:56Z"
         ],
         "Date": [
-          "Fri, 11 Jun 2021 09:40:22 GMT"
+          "Thu, 17 Jun 2021 07:37:55 GMT"
         ],
         "Content-Length": [
           "4"
@@ -898,7 +1042,7 @@
   ],
   "Names": {
     "TestPackageOperations": [
-      "testbase4417"
+      "testbase6486"
     ]
   },
   "Variables": {

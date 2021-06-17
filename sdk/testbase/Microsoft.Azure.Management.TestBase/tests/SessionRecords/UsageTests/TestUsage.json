@@ -7,7 +7,7 @@
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "fe9ee1dd-4517-4b38-a73f-e6ea851a9a71"
+          "3b8b928f-cd69-4b17-a9c5-ef3c364fe1ff"
         ],
         "Accept-Language": [
           "en-US"
@@ -27,22 +27,22 @@
           "no-cache"
         ],
         "x-ms-ratelimit-remaining-subscription-reads": [
-          "14972"
+          "14990"
         ],
         "x-ms-providerhub-traffic": [
           "True"
         ],
         "x-ms-failure-cause": [
-          "gateway"
+          "provider-api-validation"
         ],
         "x-ms-request-id": [
-          "baf0819a-c392-4079-8f9a-8400057f4f19"
+          "632298c0-dfff-43ab-9398-960c671013c2"
         ],
         "x-ms-correlation-request-id": [
-          "bbc5da70-42cd-4f06-adff-d1e4fa4b7c41"
+          "b7544fd2-a6f3-4574-aea1-bce95206672e"
         ],
         "x-ms-routing-request-id": [
-          "CENTRALUS:20210607T092601Z:bbc5da70-42cd-4f06-adff-d1e4fa4b7c41"
+          "CENTRALUS:20210617T074142Z:b7544fd2-a6f3-4574-aea1-bce95206672e"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -54,13 +54,13 @@
           "CONFIG_NOCACHE"
         ],
         "X-MSEdge-Ref": [
-          "Ref A: 2F4711184DAB484D91A946D7D2545C23 Ref B: SG2EDGE1520 Ref C: 2021-06-07T09:26:00Z"
+          "Ref A: 647C32DAD8864BFF9CA6740F5B7F02D5 Ref B: SG2EDGE1606 Ref C: 2021-06-17T07:41:41Z"
         ],
         "Date": [
-          "Mon, 07 Jun 2021 09:26:00 GMT"
+          "Thu, 17 Jun 2021 07:41:42 GMT"
         ],
         "Content-Length": [
-          "229"
+          "390"
         ],
         "Content-Type": [
           "application/json"
@@ -69,8 +69,8 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"ResourceReadFailed\",\r\n    \"message\": \"Failed to read resource '/subscriptions/9fabf001-9c1f-4aab-9451-e431da271956/resourceGroups/testbase_rg/providers/' as resource provider returned either empty or invalid payload\"\r\n  }\r\n}",
-      "StatusCode": 404
+      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"HttpResponsePayloadAPISpecValidationFailed\",\r\n    \"target\": \"\",\r\n    \"message\": \"Failed to create HTTP response as per the API specification with one or more errors. Please see details for more information. Consider to retry operation with api-versions ''.\",\r\n    \"details\": [\r\n      {\r\n        \"code\": \"InvalidType\",\r\n        \"message\": \"Expected type object but found type string. Paths in payload: '$.value[0].name'\"\r\n      }\r\n    ]\r\n  }\r\n}",
+      "StatusCode": 412
     }
   ],
   "Names": {},
